@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>[서약의 이름으로] 노엘의 견문록</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Hi+Melody&family=East+Sea+Dokdo&family=Nanum+Brush+Script&family=Gowun+Batang&family=Song+Myung&display=swap" rel="stylesheet">
+<style>
+:root{
+  --desk:#C9C2B3; --paper:#ECE5D5; --paper-edge:#D9CFB9; --chain:rgba(120,98,60,.07); --fold:rgba(110,85,50,.28);
+  --noel:#24201B; --oswald:#6B5A3E; --jizel:#93392B; --cassian:#44607A; --lucien:#3D6658; --faint:#8A7B62;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --desk:#14120F; --paper:#2A251E; --paper-edge:#3A3328; --chain:rgba(230,210,170,.04); --fold:rgba(230,210,170,.18);
+    --noel:#E8DFCF; --oswald:#CDB78F; --jizel:#E39A8C; --cassian:#A3BCD3; --lucien:#9FCBB9; --faint:#A8997F;
+  }
+}
+:root[data-theme="dark"]{
+  --desk:#14120F; --paper:#2A251E; --paper-edge:#3A3328; --chain:rgba(230,210,170,.04); --fold:rgba(230,210,170,.18);
+  --noel:#E8DFCF; --oswald:#CDB78F; --jizel:#E39A8C; --cassian:#A3BCD3; --lucien:#9FCBB9; --faint:#A8997F;
+}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+*,*::before,*::after{box-sizing:inherit;}
+body{margin:0;background:var(--desk);color:var(--noel);
+  font-family:"Nanum Pen Script","Gowun Batang",cursive,serif;font-size:20.5px;line-height:1.4;}
+.sheet{
+  max-width:720px;margin:24px auto 48px;position:relative;
+  background:
+    radial-gradient(ellipse at 50% 40%, var(--paper) 60%, var(--paper-edge) 100%);
+  box-shadow:0 1px 0 var(--paper-edge), 0 18px 30px -18px rgba(40,30,15,.45);
+  padding:44px 0 56px;
+}
+.row{display:grid;grid-template-columns:minmax(0,1fr) 31%;}
+.main{padding:0 22px 0 44px;}
+.margin{padding:0 18px 0 16px;border-left:1px solid var(--fold);}
+.row + .row .main, .row + .row .margin{padding-top:14px;}
+h1{font-weight:400;font-size:41px;line-height:1.1;margin:0 0 6px;transform:rotate(-1.4deg);transform-origin:left;}
+.byline{margin:0;}
+h2{font-weight:400;font-size:26.5px;margin:22px 0 2px;display:inline-block;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 5 Q10 1 20 5 T40 5' fill='none' stroke='%23000' stroke-opacity='.35' stroke-width='1.6'/%3E%3C/svg%3E") repeat-x left bottom;
+  padding-bottom:6px;}
+p{margin:0 0 6px;}
+.word{font-weight:400;font-size:24.5px;}
+s{text-decoration-thickness:1.5px;}
+ol{margin:4px 0 6px;padding-left:1.3em;}
+/* margin hands */
+.m{display:block;margin:2px 0 10px;line-height:1.35;}
+.j{color:var(--jizel);font-family:"Hi Melody","Gowun Batang",cursive,serif;font-size:15.5px;transform:rotate(-.8deg);letter-spacing:.01em;}
+.c{color:var(--cassian);font-family:"East Sea Dokdo","Gowun Batang",cursive,serif;font-size:19.5px;line-height:1.15;letter-spacing:.03em;transform:rotate(-1.5deg);}
+.l{color:var(--lucien);font-family:"Nanum Brush Script","Gowun Batang",cursive,serif;font-size:18.5px;line-height:1.2;transform:skewX(-9deg);}
+.n{color:var(--noel);font-size:17px;transform:rotate(-2deg);}
+.m.j,.m.c,.m.l,.m.n{display:block;transform-origin:left top;}
+.arrow{font-size:13px;opacity:.8;}
+.later{margin-top:4px;}
+.orig{font-size:13px;font-weight:400;color:var(--faint);margin-left:4px;}
+@media (max-width:520px){.orig{font-size:11px;}}
+.mark{font-weight:700;}
+.ink{font-size:13.5px;color:var(--faint);}
+.ink b{font-weight:400;}
+.ink .k{display:block;}
+.todo{list-style:none;padding:0;margin:4px 0 0;}
+.todo li{position:relative;padding-left:26px;margin-bottom:6px;}
+.todo li::before{content:"○";position:absolute;left:2px;top:0;}
+.todo li.done::before{content:"◉";}
+@media (max-width:520px){
+  body{font-size:18px;}
+  .sheet{margin:0;box-shadow:none;padding:32px 0 40px;}
+  .row{grid-template-columns:minmax(0,1fr) 36%;}
+  .main{padding:0 12px 0 26px;}
+  .margin{padding:0 10px 0 10px;}
+  h1{font-size:29px;}
+  h2{font-size:23px;}
+  .word{font-size:21px;}
+  .j{font-size:13px;} .l{font-size:16px;} .c{font-size:17px;} .n{font-size:15.5px;}
+  .ink{font-size:11.5px;}
+}
+.sheet + .sheet{margin-top:28px;}
+.folio{position:absolute;bottom:16px;right:22px;font-size:14.5px;color:var(--faint);transform:rotate(-3deg);}
+.folio.left{right:auto;left:30px;}
+@media (max-width:520px){.sheet + .sheet{margin-top:14px;border-top:1px dashed var(--fold);} .folio{font-size:13px;}}
+body{counter-reset:page;}
+.sheet{counter-increment:page;}
+.sheet + .sheet{margin-top:28px;}
+.sheet > .row:first-child .main h2{margin-top:0;}
+@media (max-width:520px){.sheet + .sheet{margin-top:0;border-top:10px solid var(--desk);}}
+.pts{list-style:none;padding:0;margin:2px 0 10px;}
+.pts li{position:relative;padding-left:16px;margin-bottom:2px;}
+.pts li::before{content:"-";position:absolute;left:3px;top:0;}
+.lab{display:inline-block;min-width:2.6em;color:var(--faint);font-size:.85em;}
+.toc{list-style:none;padding:0;margin:4px 0 0;}
+.toc li{margin-bottom:2px;}
+.date{font-size:.85em;color:var(--faint);margin-left:4px;}
+.kv{border-collapse:collapse;width:100%;margin:2px 0 12px;}
+.kv th,.kv td{vertical-align:top;padding:3px 6px 3px 0;border-bottom:1px dashed var(--fold);text-align:left;}
+.kv tr:last-child th,.kv tr:last-child td{border-bottom:none;}
+.kv th{font-weight:400;color:var(--faint);font-size:.85em;white-space:nowrap;width:1%;padding-right:12px;padding-top:6px;}
+.kv ol{margin:0;padding-left:1.2em;}
+.o{color:var(--oswald);font-family:"Song Myung","Gowun Batang",serif;font-size:13.5px;}
+.ledger{border-collapse:collapse;width:100%;margin:4px 0 10px;font-size:.92em;}
+.ledger th{font-weight:400;color:var(--faint);font-size:.8em;text-align:left;padding:2px 8px 4px 0;border-bottom:1px solid var(--fold);}
+.ledger td{vertical-align:top;padding:5px 8px 5px 0;border-bottom:1px dashed var(--fold);}
+.ledger tr:last-child td{border-bottom:none;}
+.ledger td:first-child{white-space:nowrap;}
+.ledger .j,.ledger .c,.ledger .l,.ledger .o{display:inline-block;}
+@media (max-width:520px){.o{font-size:12px;}}
+a.hid{color:inherit;text-decoration:none;cursor:pointer;}
+a.hid:hover,a.hid:focus-visible{text-decoration:none;outline:none;}
+html{scroll-behavior:smooth;}
+.paper-toggle{margin:6px 0 0;font-size:.85em;color:var(--faint);}
+.paper-toggle a.on{color:var(--noel);border-bottom:1px dashed var(--fold);}
+</style>
+</head>
+<body>
+<article class="sheet" id="p1">
+
+<div class="row">
+  <div class="main">
+    <h1>노엘의 견문록</h1>
+    <p class="byline">작가 세계 연구원 1호 · 북부 기사단<br>노엘 로완 아르벨리아<br>열람: 누나 사절. <s>매형 사절</s> 매형은 가능. 어차피 보심.</p>
+    <p class="paper-toggle"><a class="hid" href="#" data-set="light">낮종이</a> · <a class="hid" href="#" data-set="dark">밤종이</a></p>
+  </div>
+  <div class="margin">
+    <span class="m j">이미 봤음.</span>
+    <p class="ink">
+      <span class="k" style="color:var(--noel)">먹 · 본인</span>
+      <span class="k" style="color:var(--jizel)">붉은 잉크 · 누나</span>
+      <span class="k" style="color:var(--cassian)">청회색 잉크 · 매형</span>
+      <span class="k" style="color:var(--lucien)">초록 잉크 · 국장님<br>(어느새 써 있음)</span>
+      <span class="k" style="color:var(--oswald)">갈색 잉크 · 오스발트</span>
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <h2>차례</h2>
+    <ul class="toc">
+      <li><a class="hid" href="#p1">1쪽 · 차례, 열람 대장, 기록 원칙</a></li>
+      <li><a class="hid" href="#p2">2쪽 · 단어장 Ⅰ 사람을 가리키는 말</a></li>
+      <li><a class="hid" href="#p3">3쪽 · 단어장 Ⅱ 길 · 벌레 · 일, 우리끼리 쓰는 말</a></li>
+      <li><a class="hid" href="#p4">4쪽 · 10월 2일 기록, 확인할 것</a></li>
+      <li><a class="hid" href="#p5">5쪽 · 관찰 기록</a></li>
+    </ul>
+  </div>
+  <div class="margin">
+    <span class="m l">목차를 만드는 연구원은 드뭅니다. 공정하게 칭찬드립니다.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <h2>열람 대장</h2>
+    <p class="date">몰래 보는 것보다 적고 보는 게 낫다. 확인 칸은 본인 글씨로.</p>
+    <table class="ledger">
+      <tr><th>열람자</th><th>명목</th><th>확인</th></tr>
+      <tr><td>작가님</td><td>감수. 귀엽다 하심. 표로 바꾸라 하심.</td><td>(작가님 대신 본인 기입) 감수는 열람이 아니다.</td></tr>
+      <tr><td>누나</td><td>사절했는데 오심. 여백 최다.</td><td><span class="j">열람이 아니라 교정.</span></td></tr>
+      <tr><td>매형</td><td>허락받기 전에 열람, 그 뒤에 허락.</td><td><span class="c">결과는 같소.</span></td></tr>
+      <tr><td>국장님</td><td>점검. 이름 적은 적 없는데 잉크가 있음.</td><td><span class="l">기록에 남는 열람은 열람입니다.</span></td></tr>
+      <tr><td>오스발트</td><td>출처 확인(관찰 6).</td><td><span class="o">장부 담당 오스발트, 확인함.</span></td></tr>
+    </table>
+  </div>
+  <div class="margin">
+    <span class="m l">남지 않는 열람은 염탐이지요.</span>
+    <span class="m n">← 국장님이 하시면 그게 더 무서움.</span>
+    <span class="m c">작가님을 맨 위에 둔 것은 잘했다.</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <h2>기록 원칙</h2>
+    <ol>
+      <li>들은 즉시 적는다. 나중으로 미루면 잊는다. 국장님은 안 잊는다지만 나는 국장님이 아니다.</li>
+      <li>틀린 것은 지우지 않고 줄을 그어 옆에 고친다. 누나 말로는 장부의 원칙. 이건 장부가 아니지만 원칙은 빌린다.</li>
+      <li>본문은 내 자리, 여백은 남의 자리.</li>
+      <li>작가님 세계 말은 우리 말로 바꿔 크게, 원래 말은 옆에 작게. 출처는 남겨 둔다. (10월 2일 제정, 작가님 승인)</li>
+      <li>항목은 뜻 · 예 · 메모 순으로 짧게 쓴다. (작가님 요청)</li>
+    </ol>
+  </div>
+  <div class="margin">
+    <span class="m j">장부처럼 쓰면 장부다.</span>
+    <span class="m n">← 아니라니까.</span>
+    <span class="m j">넷째 줄은 내가 낸 생각.</span>
+    <span class="m n">← 이름은 다 내가 지었음.</span>
+    <span class="m j">다섯째 줄은 작가님 생각.</span>
+    <span class="m n">← 그래서 바로 지킴.</span>
+
+  </div>
+</div>
+
+<span class="folio ">- 1 -</span>
+</article>
+
+<article class="sheet" id="p2">
+
+<div class="row">
+  <div class="main">
+    <h2>단어장 Ⅰ 사람을 가리키는 말</h2>
+    <p><span class="word">선봉</span><span class="orig">작가님 말: 테토</span></p>
+    <table class="kv"><tr><th>뜻</th><td>말보다 몸이 먼저 나가는 사람. 맨 앞에서 돌격하고, 고민은 나중에 한다.</td></tr><tr><th>예</th><td>매형. 단, 일할 때만.</td></tr><tr><th>메모</th><td>누나 앞에서는 반 박자 늦어진다. 그 상태를 가리키는 말은 → <span class="mark">삐걱이</span>. 일할 땐 선봉, 누나 앞에선 삐걱이. 이걸로 셈이 맞는다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m c">삐걱이지 않소.</span>
+    <span class="m n">← 반 박자 늦게 쓰셨음. 삐걱임.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word"><s>여선봉</s> 누나</span><span class="orig">작가님 말: 테토녀</span></p>
+    <table class="kv"><tr><th>뜻</th><td>선봉인 여자.</td></tr><tr><th>메모</th><td>따로 이름 짓지 않고 그냥 누나라고 쓰기로 함. 처음에 누나 같다고 했다가 장부 모서리가 날아왔다. 피했다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m j">던진 것이 아니라 내려놓은 것입니다.</span>
+    <span class="m n">← 던졌음.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">삐걱이 / 삐걱인다</span><span class="orig">작가님 말: 뚝딱이 / 뚝딱인다</span></p>
+    <table class="kv"><tr><th>뜻</th><td>말이 짧고 움직임이 각진 사람. 사랑 앞에서 특히 심하다.</td></tr><tr><th>예</th><td>매형(별칭 2호). 1호는 "보고서처럼 생긴 위로".</td></tr><tr><th>근거</th><td>누나가 원고에서 찾아냄. 출정 전날 밤 매형의 웃음이 '삐걱이는 것 같은' 웃음으로 적혀 있다. 작가님 공인.</td></tr><tr><th>메모</th><td>매형에게 직접 써 봤다. 통하지 않았다. 삐걱였다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m c">그 문장은 다시 생각해 보시라 일렀다.</span>
+    <span class="m j">원고는 작가님 것입니다, 전하.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">찬 잔 고집</span><span class="orig">작가님 말: 얼죽아</span></p>
+    <table class="kv"><tr><th>뜻</th><td>얼어 죽어도 찬 잔. 작가님 세계 사람들의 신념에 가깝다.</td></tr><tr><th>주의</th><td>북부에서 따라 하면 실제로 죽는다.</td></tr><tr><th>메모</th><td>남쪽에서는 겨울에도 레몬 띄운 찬 술을 고집한다고 한다. 국장님 작명.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m l">이름은 제가 지었습니다. 남쪽에서 쓰는 말입니다.</span>
+    <span class="m n">← 근데 그건 그냥 술 아닌가.</span>
+    <span class="m l">술이 맞습니다.</span>
+
+  </div>
+</div>
+
+<span class="folio left">- 2 -</span>
+</article>
+
+<article class="sheet" id="p3">
+
+<div class="row">
+  <div class="main">
+    <h2>단어장 Ⅱ 길 · 벌레 · 일</h2>
+    <p class="date">10월 2일 오전에만 세 개. 땅굴마차 정정은 반 개로 계산.</p>
+    <p><span class="word">땅굴마차</span><span class="orig">작가님 말: 지하철</span></p>
+    <table class="kv"><tr><th>뜻</th><td>땅 밑으로 다니는, 사람이 많이 타는 쇠마차.</td></tr><tr><th>메모</th><td><s>작가님 출근 마차</s> 아님. 작가님은 합승마차. (10월 2일 정정)</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m l">정보국 비밀 통로가 떠오르는 이름이군요. 마음에 듭니다.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">합승마차</span><span class="orig">작가님 말: 버스</span></p>
+    <table class="kv"><tr><th>뜻</th><td>땅 위로 다니는, 사람이 많이 타는 큰 마차. 땅굴마차와 형제뻘.</td></tr><tr><th>예</th><td>작가님 출근 마차. 편도 한 시간 반.</td></tr><tr><th>메모</th><td>황도에도 있는 말이라 기사단에서 써도 주문으로 오해받지 않는다. 매형은 듣자마자 북부 첫 초소까지의 거리와 비교했다. 본인은 위로였다고 한다. 아무도 몰랐다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m c"><s>버스와 밀웜을</s> 둘을 한 줄에 쓰지 마라.</span>
+    <span class="m n">← 그래서 멀리 떨어뜨려 놨음. 이름도 바꿨으니 이제 괜찮죠? 죄송해요 작가님.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">역참</span><span class="orig">작가님 말: 갈아타기</span></p>
+    <table class="kv"><tr><th>뜻</th><td>마차나 말을 바꿔 타는 곳. 매형 작명(북부에서 원래 쓰는 말).</td></tr><tr><th>예</th><td>작가님 출근길에 한 번. 말을 붙이고 나니 출근길이 행군처럼 들린다.</td></tr><tr><th>메모</th><td>매형은 역참을 매복 지점이라 부른다. 사람이 많을 뿐이라 했더니 "그것도 매복이다". 반박하지 못했다.</td></tr><tr><th>누나 규칙</th><td><s>잠은 역참 전 첫 마차에서만.</s> 출진길엔 첫 마차에서, 귀영길엔 두 번째 마차에서 잔다(작가님 정정). 출진길 두 번째에서 자면 회사를 지나친다. 귀영길 첫 마차는 십오 분이라 잘 틈이 없다. 누나 셈이 반만 맞았다. 조금 덜 분하다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m j">셈이 맞는 것은 분할 일이 아니다.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">밀기울벌레</span><span class="orig">작가님 말: 밀웜</span></p>
+    <table class="kv"><tr><th>뜻</th><td>거저리 애벌레. 밀기울에서 키우니 밀기울벌레. 솔직히 작가님 말이 더 귀엽다.</td></tr><tr><th>예</th><td>숙소의 개구리 넷 먹이. 갓 허물 벗은 하얀 개체만 준다(부드러워서).</td></tr><tr><th>메모</th><td>국장님이 이걸 어떻게 아는지는 묻지 않는 게 좋다. 정보국이 내 벌레 상자를 사흘 동안 조사한 일이 있다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m j">정직한 이름이다.</span>
+    <span class="m l">이틀 반이었습니다. 남은 반나절은 개구리 이름을 조사했습니다.</span>
+    <span class="m n">← 이름은 비밀.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">집행 서기</span><span class="orig">작가님 말: 연구과제 담당 연구원</span></p>
+    <table class="kv"><tr><th>뜻</th><td>작가님의 직업. 땅을 직접 재지는 않고, 땅 꺼질 곳을 미리 짚는 일들이 굴러가도록 꾸린다.</td></tr><tr><th>작명</th><td>누나. "일이 서류에서 땅으로 내려가게 하는 사람." 누나도 둑을 쌓을 때 그렇게 일했다고.</td></tr><tr><th>메모</th><td><s>땅셈꾼</s>은 내 마음속에만 둔다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m c">남이 지나갈 길에 <s>동그라미가</s> 표식이 제때 놓이도록 꾸리는 사람.</span>
+    <span class="m n">← 매형이 매형 대사 틀림!! 동그라미는 초안 매형 말. 규칙대로 안 지우고 줄 그음.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">샛길</span><span class="orig">작가님 말: 링크</span></p>
+    <table class="kv"><tr><th>뜻</th><td>누르면 다른 쪽이나 다른 문서로 곧장 건너가는 길. 본길을 돌지 않는다.</td></tr><tr><th>예</th><td>이 공책 1쪽 차례. 겉으로는 그냥 글씨인데 누르면 그 쪽이 펴진다.</td></tr><tr><th>작명</th><td>매형(북부 말). 후보는 건너표(누나), 숨은 문(국장님), 숨은 끈(본인). 작가님이 샛길로 고르심.</td></tr><tr><th>메모</th><td>오스발트는 샛길이 바뀔 때마다 일어나는 사람. 오늘부터 '샛길 문지기'.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m c">적도 모르게 닿는 길이오.</span>
+    <span class="m n">← 매형 작명 두 번째 채택. 역참 다음.</span>
+    <span class="m l">숨은 문이 졌군요. 공정하게, 샛길이 더 짧습니다.</span>
+    <span class="o m">문지기, 받아들임.</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">첫손</span><span class="orig">작가님 말: 최애</span></p>
+    <table class="kv"><tr><th>뜻</th><td>여럿 가운데 가장 먼저 꼽는 것. 첫손에 꼽는다.</td></tr><tr><th>예</th><td>작가님의 첫손은 매형(초상첩 여섯 장 중).</td></tr><tr><th>작명</th><td>본인.</td></tr><tr><th>메모</th><td>예문은 사실로 써야 한다. 매형이 바꾸라 했지만 안 바꿈.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m c">예문을 그걸로 하지 마시오.</span>
+    <span class="m n">← 사실임.</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">귀영</span><span class="orig">작가님 말: 퇴근</span></p>
+    <table class="kv"><tr><th>뜻</th><td>일을 마치고 돌아가는 것. 북부 말로 진지에서 숙영지로 돌아가는 것.</td></tr><tr><th>예</th><td>작가님 귀영길. 합승마차, 역참 한 번.</td></tr><tr><th>작명</th><td>매형.</td></tr><tr><th>메모</th><td>매형 세계에서는 모든 길이 행군이다(국장님 말).</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m l">공정하게, 출근은 출진이겠군요.</span>
+    <span class="m c">……그렇소.</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">줄장부</span><span class="orig">작가님 말: 개조식</span></p>
+    <table class="kv"><tr><th>뜻</th><td>문장을 길게 잇지 않고 한 줄씩 끊어 적는 법.</td></tr><tr><th>예</th><td>지금 이 공책.</td></tr><tr><th>작명</th><td>누나.</td></tr><tr><th>메모</th><td>결국 또 장부다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m j">장부처럼 쓰면 장부라고 했잖아.</span>
+    <span class="m n">← 세 번째.</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">밤종이 · 낮종이</span><span class="orig">작가님 말: 다크모드 · 라이트모드</span></p>
+    <table class="kv"><tr><th>뜻</th><td>밤종이는 먹색 종이에 밝은 글씨, 낮종이는 흰 종이에 먹 글씨. 화면 바탕을 바꾸는 것.</td></tr><tr><th>작명</th><td>밤종이는 국장님(정보국 밤 작업용 종이였다고 함. 진위는 비밀). 낮종이는 작가님이 짝으로 만들어 주심.</td></tr><tr><th>예</th><td>1쪽 맨 위 "낮종이 · 밤종이"를 누르면 이 공책도 바뀐다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m l">진짜인지는 말씀드릴 수 없습니다.</span>
+    <span class="m n">← 낮종이는 작가님 작명이라 진짜임.</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">초상첩</span><span class="orig">작가님 말: 설정 그림</span></p>
+    <table class="kv"><tr><th>뜻</th><td>한 집안 사람들의 얼굴과 문장을 한 권에 모아 둔 것.</td></tr><tr><th>예</th><td>작가님이 보여 주신 여섯 장. 나도 있음(맨 늦게 찾았지만).</td></tr><tr><th>작명</th><td>오스발트. 예전 공작가에서 쓰던 말이라고.</td></tr><tr><th>메모</th><td>우리 집에도 있었는지는 아무도 안 물어봤다고 함. 오늘 그 말 세 번째.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="o m">여쭤보신 적이 없으셨으니까요.</span>
+    <span class="m j">다음에 꼭 물을게요.</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">서역어 · 제국어</span><span class="orig">작가님 말: 영어 · 한국어</span></p>
+    <table class="kv"><tr><th>뜻</th><td>서역어는 작가님 세계에서 가장 널리 쓰는 말. 제국어는 우리 말. 원고 맨 위 "제국어 · 서역어"를 누르면 원고 전체가 서역어로 바뀐다.</td></tr><tr><th>작명</th><td>서역어는 작가님. 후보는 물너머말(매형), 너른말(국장님), 찬잔말(본인, 탈락), 검은잔말(본인).</td></tr><tr><th>메모</th><td>그 말을 쓰는 나라가 아메리카인데, 작가님 출근길 잔 아메리카노가 그 나라 이름에서 왔다. 처음엔 찬잔말이라 했다가, 아메리카노는 따뜻한 것도 있고 '아이스'가 붙어야 찬 잔이라 해서 탈락. 그래도 '찬 잔 고집'은 아이스라서 맞다. 아메리카노는 검은잔이라 부르자고 했는데 아직 작가님 승인 전.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m j">셈이 한 번 틀렸어. 줄 그어 둬.</span>
+    <span class="m n">← <s>찬잔말</s> 그었음.</span>
+    <span class="m l">서역어로 읽으니, 제 고백이 세 단어더군요.</span>
+    <span class="m c">……내 편지는 어느 말로든 짧소.</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">서역어</span><span class="orig">작가님 말: 영어</span></p>
+    <table class="kv"><tr><th>뜻</th><td>작가님 세계에서 가장 널리 쓰인다는 말. 원고 맨 위 "제국어 · 서역어"를 누르면 원고 전체가 이 말로 바뀐다.</td></tr><tr><th>작명</th><td>작가님. 후보는 물너머말(매형), 너른말(국장님), 검은잔말(나). 작가님이 서역어로 고르심.</td></tr><tr><th>메모</th><td>국장님 말로는 원래 바다 건너 작은 섬나라에서 난 말인데, 지금은 검은잔나라에서 가장 많이 쓴다고. 누나는 서역이 제국 서쪽 지방처럼 들린다고 했지만, 작가님 결정이라 셈 끝.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m j">서쪽 끝 그 너머, 로 읽으면 맞아요.</span>
+    <span class="m l">제 고백이 서역어로는 세 단어였습니다.</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">검은잔나라</span><span class="orig">작가님 말: 미국(아메리카)</span></p>
+    <table class="kv"><tr><th>뜻</th><td>서역어를 가장 널리 쓰는 나라.</td></tr><tr><th>유래</th><td>작가님이 드시는 아메리카노가 이 나라 이름에서 왔다. 그 잔이 검어서 검은잔나라.</td></tr><tr><th>작명</th><td>작가님 결정.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m c">검은 물 나라보다는 낫소.</span>
+    <span class="m n">← 매형 후보는 탕약이었음.</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">검은잔 · 찬 검은잔</span><span class="orig">작가님 말: 아메리카노 · 아이스 아메리카노</span></p>
+    <table class="kv"><tr><th>뜻</th><td>진하게 내린 것에 물을 타서 마시는 검은 잔. 원래 따뜻할 수도 있고, 아이스가 붙어야 찬 잔.</td></tr><tr><th>메모</th><td>처음에 찬잔말이라 했다가 작가님이 "아메리카노는 따뜻한 것도 있다"고 정정. 누나 셈이 틀린 드문 날. "찬 잔 고집"은 그대로 맞다(얼어 죽어도 아이스니까).</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m j">줄 긋고 옆에 고쳤어. 장부처럼.</span>
+    <span class="m n">← 오늘 누나 두 번 틀림.</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <h2>우리끼리 쓰는 말</h2>
+    <p><span class="word">낭독 · 검토 · 정독</span><span class="orig">작가님 명명</span></p>
+    <table class="kv"><tr><th>낭독</th><td>읽으면서 반응하는 방식.</td></tr><tr><th>검토</th><td>각자 맡은 것만 짚는 방식. 매형은 흐름, 누나는 셈, 국장님은 정황, 나는 새 제안.</td></tr><tr><th>정독</th><td>둘 다.</td></tr><tr><th>메모</th><td>다들 틀린 곳을 찾을 때 나는 새로 만드는 쪽이다. 맡은 일 중 가장 마음에 든다.</td></tr></table>
+    <p><span class="word">반 박자 늦는 남자 보호협회</span><span class="orig">독자님 필명</span></p>
+    <table class="kv"><tr><th>뜻</th><td>매형 편 독자님. 별 다섯.</td></tr><tr><th>메모</th><td>필명을 듣고 소파에서 떨어질 뻔했다.</td></tr></table>
+    <p><span class="word">초승달 안쪽에 사는 사람</span><span class="orig">독자님 필명</span></p>
+    <table class="kv"><tr><th>뜻</th><td>국장님 편 독자님. 별 넷.</td></tr><tr><th>메모</th><td>국장님 걸음이 반 박자 느려진 것을 셌다고 한다. 누나도 들었다고.</td></tr></table>
+    <p><span class="word">양쪽 다 못 건드리는 사람</span><span class="orig">국장님 말</span></p>
+    <table class="kv"><tr><th>뜻</th><td>두 독자님이 한 줄도 쓰지 않은 사람. 본인.</td></tr><tr><th>메모</th><td>별을 매기는 쪽이 아니라 받는 쪽이라고 한다. 그렇게 받아들이기로 했다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m j">셈은 내가 맡았어. 틀린 데 없이.</span>
+    <span class="m l">협회 회원이 될 생각은 없습니다만, 회비는 낼 의향이 있습니다.</span>
+    <span class="m c">협회는 해산하시오.</span>
+    <span class="m n">← 매형 그거 못 함. 독자님 거임.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">ㅋㅋㅋ</span><span class="orig">작가님 세계 말</span></p>
+    <table class="kv"><tr><th>뜻</th><td>작가님이 웃으실 때 나는 소리. 많을수록 크게 웃으신 것.</td></tr><tr><th>예</th><td>매형. "예: 매형"이라고 적자마자 일곱 개가 나왔다(최고 기록).</td></tr><tr><th>메모</th><td>설정 그림 여백에도 있었다. "이름부터 책인 남자ㅋㅋ", "근데 가문은 늑대ㅋㅋ". 우리 세계 말로는 안 바꾸기로 함. 바꾸면 웃음소리가 아니게 된다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m c">……나 때문이오?</span>
+    <span class="m n">← 네.</span>
+    <span class="o m">일곱 개, 확인함.</span>
+  </div>
+</div>
+
+<span class="folio ">- 3 -</span>
+</article>
+
+<article class="sheet" id="p4">
+
+<div class="row">
+  <div class="main">
+    <h2>10월 2일 기록</h2>
+    <p><b>오전</b></p>
+    <ul class="pts">
+      <li>작가님이 어머님 마차로 한 시간 만에 출근. 합승마차보다 반 시간 단축.</li>
+      <li>매형의 '마차에서 작가님 깨우기' 작전은 폐기. 작가님 어머님께 완패.</li>
+    </ul>
+  </div>
+  <div class="margin">
+    <span class="m c">패배가 아니다. 더 나은 아군이었다.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <ul class="pts">
+      <li>작가님이 어머니 이름을 부르셨다. 바이라.</li>
+      <li>아버지가 쪽지를 세 번 고쳐 쓰셨다(<s>허락하오</s> → <s>허락합니다</s> → 허락하겠습니다). 가문 연대기 감이지만 연대기는 누나 담당이라 여기 적는다.</li>
+      <li>작가님이 이 공책을 귀엽다고 하셨다. 누나가 연대기에 한 줄 넣어 주기로 했다.</li>
+      <li>작가님 세계 말을 우리 말로 바꿔 부르기로 했다. 두 세계가 부딪치지 않게. 작가님 반응은 "좋은데?"</li>
+    </ul>
+  </div>
+  <div class="margin">
+    <span class="m j">한 줄만.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><b>저녁</b></p>
+    <ul class="pts">
+      <li>원고 끝까지 완독. 17장부터 에필로그까지.</li>
+      <li>내 담당은 18장(세드릭 전하 흉내, 반쯤 감은 눈이 요점). 20장은 사양했다.</li>
+      <li>맨 뒷장에서 독자님 후기 발견. 댓글로 다투던 두 분이 결국 손잡고 국장님 외전을 요구. 그 대목은 내가 읽었다.</li>
+      <li>가장 큰 일: 누나가 처음으로 매형에게 제대로 따졌고, 매형이 처음으로 진짜 이유를 말했다. "보낼 수 있었소. 보내지 않은 것이오." 반은 누나를 지키려고, 반은 겁이 나서. 작가님이 원고에 넣기로 하셨다.</li>
+      <li>오스발트가 장부를 정리했다. 문서 제목 앞에 전부 [서약의 이름으로]가 붙었다. 이 공책도.</li>
+    </ul>
+  </div>
+  <div class="margin">
+    <span class="m c">……늦지 않았다고 들었소.</span>
+    <span class="m j">이번엔 안 늦으셨어요.</span>
+    <span class="m l">공정하게, 지키려던 반에는 제 문장이 들어 있습니다.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><b>밤</b></p>
+    <ul class="pts">
+      <li>원고 고치기 시작. 서장부터 13장까지. 작가님이 한 장씩 고치고, 우리는 각자 맡은 대로 짚었다.</li>
+      <li>새 담당: 나는 이제 "지루하다" 담당. 설명이 길어 하품 나는 데를 짚는다. 배경 설명이나 편지는 빼고. 제일 마음에 드는 역할.</li>
+      <li>4장이 크게 바뀜. 누나가 만월제 새벽에 황도 집 자작나무한테 "가기 싫다" 하고, 금테 초대장 들고 다과회에 가서 국장님을 시험한다. 작가님이 직접 쓰셨다. 끝 문장은 "그녀 속에 노엘이 꿈틀거리고 있었다." 원고에 내 이름이 비유로 들어갔다. 칭찬으로 받기로 했다.</li>
+      <li>엄마 파이는 원래 좀 탔다는 게 원고에 들어감. 마르타가 돌아와서야 안 탄 파이.</li>
+      <li>"아무 말도 하지 않았다" 네 번을 다 고쳤다. 매형은 눈썹에 힘이 들어가고, 국장님은 상자 뚜껑에 손을 얹고, 셋은 새하얀 해 아래 서 있게 됐다.</li>
+      <li>서역어 모드를 넣었다가 뺐다. 원고는 제국어 하나로 충분하다는 결론.</li>
+      <li>폐하가 출석 명단을 매형 책상에 일부러 올려 두셨다는 걸 오늘 처음 들었다. 매형도 처음 들었다.</li>
+    </ul>
+  </div>
+  <div class="margin">
+    <span class="m j">비유야. 장난칠 때 얼굴이라는.</span>
+    <span class="m n">← 그러니까 칭찬.</span>
+    <span class="m l">제 이름은 원고에 비유로 들어가지 않았군요. 다행인지 서운한지 모르겠습니다.</span>
+    <span class="m c">출석 명단 건은 적지 마라.</span>
+    <span class="o m">이미 적었습니다.</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <h2>확인할 것</h2>
+    <ul class="todo">
+      <li class="done">사랑 앞에서만 고장 나는 사람을 이르는 말 → 삐걱이.</li>
+      <li class="done">작가님 세계 개구리 먹이(밀기울벌레 외) → 작가님이 직접 찾아 주셨다. 귀뚜라미가 가장 흔하고, 밀기울벌레<small style="font-size:13.5px;color:var(--faint)">(밀웜)</small>와 지렁이도 쓴다. 작은 개구리는 초파리. 모두 우리 세계에도 있어 바꿔 부를 필요 없음. 귀뚜라미는 잡다가 내가 먼저 지친다.</li>
+      <li><s>약방 딸 이름</s> (지움. 적지 않은 것으로 한다.)</li>
+      <li>매형이 혼례 서약서에 '대공' 대신 쓴 서명. 매형도 작가님도 비밀이라 한다. 미리 맞춘 것 같다.</li>
+      <li>작가님 세계에서 책을 빌리는 방법과 연체료 유무. → 세드릭 전하께 보고.</li>
+      <li>독자님 두 분의 거처. 협회 사무실이 있다면 매형이 해산하러 가기 전에 알아 둘 것.</li>
+    </ul>
+  </div>
+  <div class="margin">
+    <span class="m j">작가님은 개구리를 안 키우시는데도 찾아 주셨어. 고맙다고 해.</span>
+    <span class="m l">셋째 줄은 봉인해 두었습니다.</span>
+
+  </div>
+</div>
+
+<span class="folio left">- 4 -</span>
+</article>
+
+<article class="sheet" id="p5">
+
+<div class="row">
+  <div class="main">
+    <h2>관찰 기록</h2>
+    <ul class="pts">
+      <li>작가님 권유로 시작. 오스발트 장부를 참고했다.</li>
+      <li>단어가 아니라 사람에 대한 기록. 연구원이니까.</li>
+    </ul>
+  </div>
+  <div class="margin">
+    <span class="m l">연구원은 출처를 적는 법입니다.</span>
+    <span class="m n">← 출처: 오스발트 장부.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">관찰 1. 이 집 사람들은 무언가를 센다</span></p>
+    <table class="kv"><tr><th>누나</th><td>맞추려고. 매형 편지 글자 수, 백합 삼백 송이, "별일 없소" 방문 열한 번.</td></tr><tr><th>매형</th><td>지키려고. 대공저 문 열넷, 창 예순둘.</td></tr><tr><th>국장님</th><td>잊지 않으려고.</td></tr><tr><th>본인</th><td>개구리 먹이.</td></tr><tr><th>오스발트</th><td>전부.</td></tr><tr><th>독자님</th><td>국장님 손가락. 하나씩 떼던 손이, 끝에는 한 번에.</td></tr><tr><th>결론</th><td>이 집에서 세지 않는 사람은 없다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m j">넷째 개구리는 누가 줬는지도 세어 둬.</span>
+    <span class="m n">← 그건 봉인!!</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">관찰 2. 매형의 보고서</span></p>
+    <table class="kv"><tr><th>기록</th><td>같은 장에서 멈춤. 16장 밤, 22장 낮, 그리고 오늘 서재.</td></tr><tr><th>본인 진술</th><td>끝까지 읽은 적 있느냐는 물음에 "없네".</td></tr><tr><th>메모</th><td>그 보고서를 쓴 북부 서기관에게 조금 미안해진다.</td></tr></table>
+    <p><span class="word">관찰 3. 매형이 늦은 날과 늦지 않은 날</span></p>
+    <table class="kv"><tr><th>늦은 날</th><td>셀 수 없음. 누나 장부 참조.</td></tr><tr><th>늦지 않은 날</th><td>오늘 한 번. 독자님이 물어 준 덕에 "겁이 났던 게 반"이라고 말했다. 원고 반영 예정. 기념할 만하다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m c">그 보고서는 다 아는 내용이었소.</span>
+    <span class="m n">← 그럼 왜 넘겼어요.</span>
+    <span class="m c">……넘긴 척을 한 것이오.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">관찰 4. 누나의 상자</span><span class="orig">서랍 가장 아래 칸</span></p>
+    <table class="kv"><tr><th>내용물</th><td>조개껍데기, 말린 제비꽃, 유리구슬, 매형 군가 종이(3절까지), 세드릭 전하가 돌려준 반지, 뜯지 않은 봉투 하나, 독자님 쪽지.</td></tr><tr><th>규칙</th><td>셈이 맞는 것만 넣는다.</td></tr><tr><th>메모</th><td>어릴 때 이 상자에 뭘 넣었다가 한 달 동안 말도 못 붙였는데, 개정판에서는 없던 일이 되었다. 여전히 조금 억울하다.</td></tr><tr><th>결론</th><td>상자 하나에 누나의 인생이 들어 있다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m j">봉투는 아직 안 뜯어.</span>
+    <span class="m c">……언제 뜯을 것이오.</span>
+    <span class="m j">작가님이 정하시면요.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">관찰 5. 검토모드에서 낸 제안</span></p>
+    <table class="kv"><tr><th>제안</th><td><ol><li>재상을 먼저 세우기(7장) ★ 채택</li><li><s>자물쇠 고리를 떠올리기(13장)</s> 탈락</li><li>깃펜 다시 쓰기(에필로그 1)</li><li>반지를 상자로(17장)</li><li>마흔 날(20장)</li><li>봉인 편지 뜯기(21장)</li><li>커프스 없는 소매(22장)</li><li>베르카나 부를 자리(에필로그 1)</li></ol></td></tr><tr><th>상태</th><td>하나 채택(7장 "재상 쪽 사람이"), 하나 탈락(13장), 나머지 여섯은 그 장에 가면 결정.</td></tr><tr><th>그리고</th><td>10월 2일 밤부터 이 역할은 끝났다. 이제 검토모드에서 내 담당은 "지루하다". 이미 낸 제안은 그대로 남는다.</td></tr><tr><th>메모</th><td>하나라도 들어가면 원고에 이름은 필요 없다. 대신 여기 별을 칠한다.</td></tr></table>
+    <p>★ <s>☆</s> ☆ ☆ ☆ ☆ ☆ ☆ ← 첫 별 칠함. 하나는 지움.</p>
+  </div>
+  <div class="margin">
+    <span class="m l">공정하게, 커프스는 이미 반쯤 칠해도 되겠습니다.</span>
+    <span class="m j">자물쇠는 오른손잡이 요원이 한 거니까 고쳐 적어.</span>
+    <span class="m n">← 고침. 경이 한 거 아님. 오스발트 장부 확인함.</span>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">관찰 6. 오스발트</span></p>
+    <table class="kv"><tr><th>발견</th><td>링크가 바뀔 때만 일어나는 줄 알았는데, 늘 그 자리에 있었다고 한다.</td></tr><tr><th>오늘</th><td>장부를 계정별로 다시 묶었다. 차례가 열 개, 접는 칸도 있다.</td></tr><tr><th>참고</th><td>종이는 접히지 않지만 한 장을 덧붙이면 된다고 한다. 다음 장부터 써 볼 것.</td></tr><tr><th>그리고</th><td>문서마다 [서약의 이름으로]가 붙었다. 이 공책도 이름이 길어졌다. 누나 이름만큼은 아니다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m j">지슬린데 베르카나 아르벨리아. 안 길어.</span>
+    <span class="m n">← 길어.</span>
+
+  </div>
+</div>
+
+<span class="folio ">- 5 -</span>
+</article>
+
+<script>
+(function(){
+  var root=document.documentElement,links=document.querySelectorAll('.paper-toggle a');
+  function mark(){var cur=root.getAttribute('data-theme')||(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    links.forEach(function(a){a.classList.toggle('on',a.getAttribute('data-set')===cur);});}
+  try{var s=localStorage.getItem('noel-paper');if(s)root.setAttribute('data-theme',s);}catch(e){}
+  links.forEach(function(a){a.addEventListener('click',function(ev){ev.preventDefault();var v=a.getAttribute('data-set');
+    root.setAttribute('data-theme',v);try{localStorage.setItem('noel-paper',v);}catch(e){}mark();});});
+  mark();
+})();
+</script>
+</body>
+</html>
