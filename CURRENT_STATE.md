@@ -1,6 +1,6 @@
 # CURRENT STATE
 
-STATE_VERSION: 2026-10-03-21-REVIEW-v2
+STATE_VERSION: 2026-10-03-21-REVIEW-v3
 
 > 빠른 시작용 캐시. 작품 정본이 아니다.
 > 현재 진행 위치와 다음 작업은 이 파일을 우선 확인하고, 상세 이력은 `meta/worklog.html`에서 재확인한다.
@@ -45,10 +45,7 @@ STATE_VERSION: 2026-10-03-21-REVIEW-v2
 
 
 ## 인수인계에 필요한 파일
-새 Claude 채팅으로 넘길 때는 아래 경로들의 <strong>그 시점 최신 커밋 고정 raw URL</strong>을 한 번에 생성해 시작 메시지에 넣는다.
-URL 자체는 이 파일에 고정 저장하지 않는다. 파일이 수정될 때마다 커밋 SHA가 바뀌기 때문이다.
-
-현재 21장 검토모드에 필요한 파일:
+현재 21장 검토모드:
 - `ROUTER.md`
 - `CURRENT_STATE.md`
 - `manuscript/current.html`
@@ -56,13 +53,7 @@ URL 자체는 이 파일에 고정 저장하지 않는다. 파일이 수정될 �
 - `meta/characters.html`
 - `meta/gpt-writing-guide.md`
 
-필요에 따라 `meta/canon-rules.md` 또는 `meta/worklog.html`을 추가할 수 있다.
-
-작가가 "인수인계 프롬프트 줘", "새 채팅으로 넘길게", "이어가기 프롬프트 줘"라고 하면:
-- GitHub에 직접 접근 가능한 작업 도우미가 위 파일들의 최신 커밋 SHA를 확인한다.
-- 최신 SHA로 고정 raw URL을 만든다.
-- 현재 위치와 다음 작업을 포함한 Claude용 시작 메시지 하나로 묶어 준다.
-- 과거에 만든 URL 목록은 재사용하지 않는다.
+작가가 인수인계를 요청하면 위 파일들의 최신 커밋 고정 URL로 새 Claude 채팅용 시작 프롬프트를 만든다.
 
 ## 갱신 규칙
 장 완료, 현재 장 변경, 새 미완료 수정거리 확정 시 이 파일을 짧게 갱신한다.
