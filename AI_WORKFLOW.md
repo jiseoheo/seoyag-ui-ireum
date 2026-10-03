@@ -7,12 +7,16 @@
 - 노엘의 견문록: `extras/noel.html`
 - 상태/검색용 인덱스: Notion (`manifest.json` 참고)
 
-## 읽기 최소화 원칙
-1. 원고 전체를 매번 읽지 않는다.
-2. 먼저 Notion Revision Issues에서 필요한 수정거리만 찾는다.
-3. Chapters에서 대상 장과 경로를 확인한다.
-4. 대상 장의 본문과 관련 인물 설정만 읽는다.
-5. 세계관 설정이 필요한 경우에만 World Settings 또는 `meta/characters.html`의 관련 구간을 읽는다.
+## 읽기 범위 원칙
+1. 먼저 `meta/chapter-summaries.md`에서 전체 흐름과 장거리 연결 고리를 빠르게 확인한다.
+2. 원고 전체를 매번 읽지 않는다.
+3. Notion Revision Issues에서 현재 대상 장의 미완료 수정거리를 찾는다.
+4. Chapters에서 대상 장과 경로를 확인한다.
+5. 대상 장 원문과 관련 인물 설정만 읽는다.
+6. 장 전체 수정이면 대상 장 + 직전/직후 장 요약을 함께 본다.
+7. 연속성·복선·감정선·전체 흐름 점검이면 `meta/chapter-summaries.md` 전체를 먼저 훑고, 걸리는 장들을 원문으로 다시 확인한다.
+8. 세계관 설정이 필요한 경우에만 World Settings 또는 `meta/characters.html`의 관련 구간을 읽는다.
+9. 요약은 탐색용일 뿐 정본이 아니다. 요약과 원고가 다르면 `manuscript/current.html`을 우선한다.
 
 ## 쓰기 원칙
 - 원고가 바뀌면 GitHub의 `manuscript/current.html`을 갱신한다.
@@ -84,6 +88,7 @@
 
 ## 메타 문서
 작업 성격에 따라 다음 파일을 필요한 경우에만 읽는다.
+- `meta/chapter-summaries.md`: 장별 핵심 흐름·복선·감정선·장거리 연결 인덱스
 - `meta/canon-rules.md`: 정본 우선순위, 충돌 처리, 정본 승격 규칙
 - `meta/author-notes.md`: 작가 성향과 응답 선호
 - `meta/ideas.md`: 미확정 기획과 후속 아이디어
