@@ -1,5 +1,7 @@
 # CURRENT STATE
 
+STATE_VERSION: 2026-10-03-21-REVIEW-v1
+
 > 빠른 시작용 캐시. 작품 정본이 아니다.
 > 현재 진행 위치와 다음 작업은 이 파일을 우선 확인하고, 상세 이력은 `meta/worklog.html`에서 재확인한다.
 > 과거 대화·기억·옛 Claude artifact와 충돌하면 최신 GitHub의 이 파일과 `meta/worklog.html`을 우선한다.
