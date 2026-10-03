@@ -1,43 +1,20 @@
-# 서약의 이름으로 — shared AI workspace
+# 서약의 이름으로
 
-GPT와 Claude가 같은 작품 구조를 쓰도록 정리한 저장소입니다.
+ChatGPT와 Claude가 함께 사용하는 GitHub 작업공간입니다.
 
-## 시작
-새 세션은:
-1. `START.md`
-2. `STATUS.md`
-3. 요청에 필요한 자료만 추가 조회
+시작은 [START.md](START.md) → [STATUS.md](STATUS.md). 운영 규칙과 요청별 읽기 순서는 START에서 확인합니다.
 
-## 현재 구조
-```
-START.md                    공통 운영 규칙
-STATUS.md                   현재 위치와 미완료 작업
+| 경로 | 역할 |
+| --- | --- |
+| [manuscript/current.html](manuscript/current.html) | 원고 정본 |
+| [canon/characters.html](canon/characters.html) | 확정 캐릭터 설정 및 기존 후보 표시 |
+| [canon/world.md](canon/world.md) | 확정 세계관 |
+| [meta/chapters.md](meta/chapters.md) | 전체 흐름 탐색 |
+| [meta/style.md](meta/style.md) | 공통 문체·출력·품질 기준 |
+| [service/](service/) | 완성형 놀이 콘텐츠 |
+| [playground/](playground/) | 미확정 아이디어·초안 |
+| [archive/](archive/) | 과거 기록·옛 지침 |
+| [manifest.json](manifest.json) | 경로·장 앵커 색인 |
+| [instructions/](instructions/) | 두 모델에 같은 진입점을 안내하는 호환 파일 |
 
-manuscript/current.html     유일한 원고 정본
-
-canon/characters.html       확정 캐릭터 설정
-canon/world.md              확정 세계관
-
-meta/chapters.md            전체 장편 지도
-meta/style.md               공통 문체/출력 기준
-
-service/                    완성된 편지·견문록·소품형 페이지
-playground/                 미확정 아이디어/선택 보관
-archive/                    과거 작업기록과 이전 지침
-```
-
-## 핵심 규칙
-- GitHub main의 `manuscript/current.html`이 현재 원고다.
-- 지속 설정은 사용자가 확정한 것만 CANON으로 기록한다.
-- 즉흥 대화는 기본적으로 저장하지 않는다.
-- 원고는 사용자 승인 후에만 수정한다.
-- 현재 작업 상태는 `STATUS.md` 하나에서만 관리한다.
-- 과거 변경 이유와 버전은 Git history를 우선한다.
-
-## 서비스 페이지
-`service/`는 노엘의 견문록, 편지, 초대장, 장부 같은 완성된 놀이형 페이지용이다.
-서비스 페이지는 정본을 표현할 수 있지만, 그 자체가 새 정본을 결정하지는 않는다.
-
-## Claude
-Claude가 GitHub를 직접 읽을 수 없는 환경에서는 최신 프로젝트 파일을 Claude 프로젝트에 제공한다.
-운영 순서는 동일하게 `START → STATUS → 필요한 자료`다.
+모델별 루트 지침과 옛 경로는 공통 진입점으로 연결됩니다.

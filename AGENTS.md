@@ -1,3 +1,3 @@
 # Compatibility
 
-Read `START.md`, then `STATUS.md`.
+Read [START.md](START.md), then [STATUS.md](STATUS.md).

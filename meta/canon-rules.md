@@ -1,5 +1,3 @@
-# Moved
+# Compatibility
 
-Current canon rules are summarized in `START.md`.
-Canonical data lives in `manuscript/current.html`, `canon/characters.html`, and `canon/world.md`.
-Current work state lives in `STATUS.md`.
+운영·정본 규칙은 [START.md](../START.md)를 읽는다. 현재 상태는 [STATUS.md](../STATUS.md)에 있다.

@@ -1,3 +1,3 @@
-# Moved
+# Compatibility
 
-Current work state now lives only in `STATUS.md`.
+Read [START.md](START.md), then [STATUS.md](STATUS.md).
