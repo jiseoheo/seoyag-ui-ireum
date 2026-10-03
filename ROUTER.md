@@ -6,12 +6,21 @@
 출품·공개·상업화 기준은 작가가 별도로 요청할 때만 적용한다.
 
 ## 1. 시작 시 읽기
-새 대화에서는 먼저 이 파일과 `CURRENT_STATE.md`만 읽는다.
+새 대화에서는 먼저 이 파일만 읽는다.
 그 뒤에는 아래 라우팅에 따라 필요한 자료만 추가로 읽는다.
+`CURRENT_STATE.md`는 현재 작업 위치·다음 작업이 필요한 요청에서만 읽는다.
 원고 전체나 모든 설정 파일을 선제적으로 읽지 않는다.
 
 ## 2. 기준 자료
 현재 진행 위치·다음 작업을 말할 때는 기억, 이전 대화, 옛 Claude artifact를 근거로 삼지 않는다. 반드시 최신 `CURRENT_STATE.md`를 먼저 확인하고, 상세 상태가 필요하면 `meta/worklog.html`을 재확인한다. 둘과 과거 대화가 충돌하면 최신 GitHub 파일을 우선한다.
+
+### Claude 웹 캐시 방지
+Claude가 GitHub raw 파일을 읽을 때는 고정 URL을 그대로 재사용하지 않는다. 같은 파일을 다시 열 때마다 URL 끝에 매번 다른 캐시 방지 쿼리를 붙인다. 예:
+`https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/CURRENT_STATE.md?cb=20261003T170501`
+
+`cb=` 뒤 값은 현재 시각이나 임의의 새 문자열처럼 직전 요청과 다른 값이면 된다.
+특히 `CURRENT_STATE.md`와 `meta/worklog.html`은 진행 위치를 말하기 직전에 이 방식으로 새로 가져온다.
+읽은 `CURRENT_STATE.md`의 맨 위 `STATE_VERSION`이 없거나 예상 형식이 아니면 진행 위치를 단정하지 말고, 최신 파일을 확인하지 못했다고 말한다.
 
 Claude 웹 도구는 아래 전체 주소로만 파일을 열 수 있다. 파일을 옮기거나 이름을 바꾸면 이 주소도 함께 고친다.
 
@@ -20,7 +29,8 @@ Claude 웹 도구는 아래 전체 주소로만 파일을 열 수 있다. 파일
 - 정본/충돌 규칙: `meta/canon-rules.md`
   https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/canon-rules.md
 - 현재 작업 시작점: `CURRENT_STATE.md`
-  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/CURRENT_STATE.md
+  기본 주소: https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/CURRENT_STATE.md
+  Claude는 읽을 때마다 위 주소 끝에 서로 다른 `?cb=...` 값을 붙여 요청한다.
 - 장거리 문맥 인덱스: `meta/chapter-summaries.md`
   https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/chapter-summaries.md
 - 캐릭터 상세: `meta/characters.html`
@@ -60,7 +70,7 @@ Claude 웹 도구는 아래 전체 주소로만 파일을 열 수 있다. 파일
 작품 사실이 필요하지 않으면 원고·설정 파일을 추가로 읽지 않는다.
 
 ### D. "다음" / 장별 수정
-1. `CURRENT_STATE.md` 확인.
+1. 캐시 방지 쿼리를 붙인 새 URL로 `CURRENT_STATE.md`를 다시 읽고, `STATE_VERSION`과 현재 위치를 확인.
 2. Notion Revision Issues에서 대상 장의 미완료 수정거리 확인.
 3. `meta/chapter-summaries.md`에서 대상 장과 직전·직후 장 요약 확인.
 4. `manuscript/current.html`에서 대상 장의 필요한 원문만 읽기.
