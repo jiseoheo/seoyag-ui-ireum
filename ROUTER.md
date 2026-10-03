@@ -11,16 +11,27 @@
 원고 전체나 모든 설정 파일을 선제적으로 읽지 않는다.
 
 ## 2. 기준 자료
+Claude 웹 도구는 아래 전체 주소로만 파일을 열 수 있다. 파일을 옮기거나 이름을 바꾸면 이 주소도 함께 고친다.
+
 - 원고 정본: `manuscript/current.html`
+  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/manuscript/current.html
 - 정본/충돌 규칙: `meta/canon-rules.md`
+  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/canon-rules.md
 - 현재 작업 시작점: `CURRENT_STATE.md`
+  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/CURRENT_STATE.md
 - 장거리 문맥 인덱스: `meta/chapter-summaries.md`
+  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/chapter-summaries.md
 - 캐릭터 상세: `meta/characters.html`
+  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/characters.html
 - 작업 이력: `meta/worklog.html`
+  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/worklog.html
 - GPT 문체 상세: `meta/gpt-writing-guide.md`
+  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/gpt-writing-guide.md
 - 작가 메모: `meta/author-notes.md`
+  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/author-notes.md
 - 미확정 아이디어: `meta/ideas.md`
-- 놀이/세션 기록: `sessions/YYYY-MM-DD.md`
+  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/ideas.md
+- 세션 기록은 필요할 때 작가가 주소를 준다.
 - 상태·검색 인덱스: Notion
 
 요약은 탐색용이다. 사실 확정은 원고와 확정 설정에서 재확인한다.
