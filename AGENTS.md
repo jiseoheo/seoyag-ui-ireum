@@ -1,11 +1,3 @@
-# 서약의 이름으로 — 시작점
+# Compatibility
 
-이 파일은 호환성을 위한 얇은 부트스트랩이다.
-
-1. `ROUTER.md`를 읽는다.
-2. `CURRENT_STATE.md`를 읽는다.
-3. 이후에는 ROUTER가 요구하는 자료만 필요한 범위로 읽는다.
-4. 원고 전체, 캐릭터 전체, 작업 기록 전체를 선제적으로 읽지 않는다.
-5. 정본·충돌 판단은 `meta/canon-rules.md`를 따른다.
-
-프로젝트 목적과 모든 운영 절차의 현재 기준은 `ROUTER.md`다.
+Read `START.md`, then `STATUS.md`.
