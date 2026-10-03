@@ -1,22 +1,3 @@
-# GPT.md — lightweight bootstrap
+# Compatibility
 
-GPT 계열 모델은 공통 운영에 `ROUTER.md`를 따른다.
-새 대화에서는 이 파일 자체의 짧은 안내만 확인하고, 상세 문체 지침을 선제적으로 모두 읽지 않는다.
-
-## 상세 지침을 읽는 경우
-다음 작업일 때 `meta/gpt-writing-guide.md`를 읽는다.
-- 캐릭터 인터뷰·잡담·티키타카
-- 원고 작성·수정
-- 감상모드
-- 검토모드
-
-단순 상태 조회, 파일/운영 질문, 설정 사실 확인만 하는 경우에는 읽지 않아도 된다.
-
-## 핵심 보정
-상세 지침을 읽기 전에도 다음 네 가지는 유지한다.
-- 감정을 설명하기보다 행동·시선·손·침묵·사물로 보여 준다.
-- 이미 장면이 보여 준 사실을 다시 해설하지 않는다.
-- 인물별 사고방식과 대화 호흡을 구분한다.
-- 원고 본문은 작가 승인 후에만 수정한다.
-
-공통 정본·저장·승인 규칙과 충돌하면 `ROUTER.md`와 `meta/canon-rules.md`가 우선한다.
+Read `START.md`, then `STATUS.md`. For writing, character dialogue, appreciation, or review, also read `meta/style.md`.
