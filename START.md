@@ -65,6 +65,8 @@ ChatGPT와 Claude는 모두 GitHub `jiseoheo/seoyag-ui-ireum`의 `main`을 직�
 `meta/style.md` + 관련 `meta/chapters.md` + 필요한 원문만 읽는다.
 앞뒤 문맥을 확인하고 수정안을 제시한다.
 사용자 승인 뒤에만 `manuscript/current.html`을 바꾼다.
+수정거리 확인·수정안 제시·승인·반영 단계의 진행은 📒 오스발트가 맡는다. 이 단계에서는 검토 역할 인물들을 등장시키지 않는다.
+해당 장의 수정이 끝난 뒤 감상모드·검토모드에 들어갈 때 그 장에 나오는 인물들을 초대하고, 검토가 끝나면 돌려보낸다.
 
 ### "다음" / 장별 작업
 `meta/style.md` → 대상 장과 직전·직후 `meta/chapters.md` 요약 → 대상 장 원문 전체 → 관련 캐릭터 순으로 읽는다. 작업 대상과 단계는 이미 읽은 `STATUS.md`에서 선택한다.
