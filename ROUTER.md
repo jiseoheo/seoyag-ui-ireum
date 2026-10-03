@@ -14,13 +14,20 @@
 ## 2. 기준 자료
 현재 진행 위치·다음 작업을 말할 때는 기억, 이전 대화, 옛 Claude artifact를 근거로 삼지 않는다. 반드시 최신 `CURRENT_STATE.md`를 먼저 확인하고, 상세 상태가 필요하면 `meta/worklog.html`을 재확인한다. 둘과 과거 대화가 충돌하면 최신 GitHub 파일을 우선한다.
 
-### Claude 웹 캐시 방지
-Claude가 GitHub raw 파일을 읽을 때는 고정 URL을 그대로 재사용하지 않는다. 같은 파일을 다시 열 때마다 URL 끝에 매번 다른 캐시 방지 쿼리를 붙인다. 예:
-`https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/CURRENT_STATE.md?cb=20261003T170501`
+### Claude 최신 상태 확인
+`raw.githubusercontent.com/.../main/...` 주소는 Claude 웹 가져오기에서 오래된 캐시가 돌아올 수 있으므로, 현재 진행상태를 확인할 때 그 주소를 직접 기준으로 삼지 않는다.
 
-`cb=` 뒤 값은 현재 시각이나 임의의 새 문자열처럼 직전 요청과 다른 값이면 된다.
-특히 `CURRENT_STATE.md`와 `meta/worklog.html`은 진행 위치를 말하기 직전에 이 방식으로 새로 가져온다.
-읽은 `CURRENT_STATE.md`의 맨 위 `STATE_VERSION`이 없거나 예상 형식이 아니면 진행 위치를 단정하지 말고, 최신 파일을 확인하지 못했다고 말한다.
+`CURRENT_STATE.md`를 읽을 때는 항상 먼저 GitHub의 최신 커밋을 조회한다.
+
+1. 아래 GitHub API 주소를 연다.
+   `https://api.github.com/repos/jiseoheo/seoyag-ui-ireum/commits?path=CURRENT_STATE.md&sha=main&per_page=1`
+2. 응답에서 최신 커밋 SHA를 확인한다.
+3. 그 SHA를 사용해 아래 형식의 고정 raw 주소를 연다.
+   `https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/<최신커밋SHA>/CURRENT_STATE.md`
+4. 그 파일의 `STATE_VERSION`, 현재 위치, 현재 다음 차례를 기준으로 작업 상태를 판단한다.
+5. 고정 커밋 파일을 실제로 열지 못했으면 기억이나 옛 상태로 대신하지 말고 최신 상태 확인 실패라고 말한다.
+
+`meta/worklog.html`의 최신 이력이 필요할 때도 같은 방식으로 해당 경로의 최신 커밋을 조회한 뒤 커밋 고정 raw 주소를 사용한다.
 
 Claude 웹 도구는 아래 전체 주소로만 파일을 열 수 있다. 파일을 옮기거나 이름을 바꾸면 이 주소도 함께 고친다.
 
@@ -29,8 +36,8 @@ Claude 웹 도구는 아래 전체 주소로만 파일을 열 수 있다. 파일
 - 정본/충돌 규칙: `meta/canon-rules.md`
   https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/canon-rules.md
 - 현재 작업 시작점: `CURRENT_STATE.md`
-  기본 주소: https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/CURRENT_STATE.md
-  Claude는 읽을 때마다 위 주소 끝에 서로 다른 `?cb=...` 값을 붙여 요청한다.
+  최신 커밋 조회: https://api.github.com/repos/jiseoheo/seoyag-ui-ireum/commits?path=CURRENT_STATE.md&sha=main&per_page=1
+  실제 상태 파일은 위 조회에서 얻은 최신 커밋 SHA를 넣은 고정 raw 주소로 읽는다.
 - 장거리 문맥 인덱스: `meta/chapter-summaries.md`
   https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/chapter-summaries.md
 - 캐릭터 상세: `meta/characters.html`
@@ -52,27 +59,18 @@ Claude 웹 도구는 아래 전체 주소로만 파일을 열 수 있다. 파일
 ## 3. 요청 라우팅
 
 ### A. 정확히 "안녕 소설아"
-이 문구는 일반 인사가 아니라 <strong>인사 장면 전용 하드 리셋 호출</strong>이다.
-이 호출에 답할 때는 바로 앞 대화, 같은 대화방의 이전 작업 진행 언급, 기억, 캐시된 현재 장 정보, 옛 artifact의 진행상태를 모두 응답 재료에서 제외한다.
 일반 AI 인사 금지.
+이 호출은 새 작업 세션의 인사이자 인수인계 시작점이다.
 
-에필로그 이후 북부 대공저 서재, 벽난로 앞.
-🪶 지젤 → 🐺 카시안 → 🦉 루시엔 → 🍃 노엘 순서로 짧게 인사한 뒤 📒 오스발트가 오늘 무엇을 할지 묻는다.
-말투가 필요하므로 `meta/characters.html`의 공통 대화 형식과 상시 4인 부분만 읽는다.
+1. `meta/characters.html`의 공통 대화 형식과 상시 4인 부분만 필요한 범위에서 읽는다.
+2. 위의 "Claude 최신 상태 확인" 절차로 `CURRENT_STATE.md`의 최신 커밋 SHA를 조회하고, 그 커밋에 고정된 `CURRENT_STATE.md`를 읽는다.
+3. 에필로그 이후 북부 대공저 서재, 벽난로 앞에서 🪶 지젤 → 🐺 카시안 → 🦉 루시엔 → 🍃 노엘 순서로 짧게 인사한다.
+4. 마지막에 📒 오스발트가 <strong>방금 확인한 최신 CURRENT_STATE의 실제 진행상황</strong>을 짧게 인수인계하고, 오늘 무엇을 할지 묻는다.
 
-<strong>Route A 금지사항 — 다섯 인물 모두 적용:</strong>
-- 현재 장 번호를 말하지 않는다.
-- 완료 범위를 말하지 않는다.
-- 다음 수정거리나 남은 작업을 말하지 않는다.
-- "어디까지 했지", "지난번에", "다음은 ○장", "○장까지 끝" 같은 이전 작업 문맥을 언급하지 않는다.
-- 과거 대화에서 본 진행상태를 캐릭터 대사에 섞지 않는다.
-- `CURRENT_STATE.md`, `meta/worklog.html`, Notion 작업상태를 읽거나 인용하지 않는다.
-
-Route A의 목적은 <strong>인사와 오늘 무엇을 할지 묻는 것뿐</strong>이다.
-📒 오스발트도 장부를 펼쳐 진행상황을 보고하지 않는다. 필요하면 장부를 들고 등장할 수는 있지만, "오늘은 무엇을 하시겠습니까?" 정도로 끝낸다.
-
-작가가 인사 뒤 별도 메시지로 "다음", "이어가자", "수정 계속", "어디까지 했지?"처럼 실제 작업 진행을 요청한 경우에만 Route D 또는 상태 조회 경로로 넘어가 최신 `CURRENT_STATE.md`를 새로 확인한다.
-이 호출만으로 파일이나 Notion을 수정하지 않는다.
+오스발트는 진행상황을 말해도 된다. 오히려 새 세션의 인수인계를 위해 현재 완료 범위, 현재 단계, 다음 차례를 필요한 만큼 짧게 보고한다.
+단, 기억·이전 대화·옛 artifact·`main` raw 캐시에서 본 상태를 섞지 않는다. 반드시 그 응답에서 새로 확인한 최신 커밋 고정 `CURRENT_STATE.md`만 기준으로 한다.
+`STATE_VERSION`이 없거나 최신 커밋 고정 파일을 열지 못했으면 장 번호를 추측하지 말고 최신 상태를 확인하지 못했다고 오스발트가 보고한다.
+이 호출만으로 원고나 설정을 수정하지 않는다.
 
 ### B. 자유 대화 / 캐릭터 인터뷰 / 잡담
 `meta/gpt-writing-guide.md` + 실제 등장할 인물의 설정 부분만 읽는다.
@@ -84,7 +82,7 @@ Route A의 목적은 <strong>인사와 오늘 무엇을 할지 묻는 것뿐</st
 작품 사실이 필요하지 않으면 원고·설정 파일을 추가로 읽지 않는다.
 
 ### D. "다음" / 장별 수정
-1. 캐시 방지 쿼리를 붙인 새 URL로 `CURRENT_STATE.md`를 다시 읽고, `STATE_VERSION`과 현재 위치를 확인.
+1. GitHub API로 `CURRENT_STATE.md`의 최신 커밋 SHA를 조회한 뒤, 그 SHA가 들어간 고정 raw 주소로 파일을 읽어 `STATE_VERSION`과 현재 위치를 확인.
 2. Notion Revision Issues에서 대상 장의 미완료 수정거리 확인.
 3. `meta/chapter-summaries.md`에서 대상 장과 직전·직후 장 요약 확인.
 4. `manuscript/current.html`에서 대상 장의 필요한 원문만 읽기.
