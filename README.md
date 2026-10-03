@@ -1,6 +1,8 @@
 # 서약의 이름으로
 
-ChatGPT와 Claude가 함께 사용하는 GitHub 작업공간입니다.
+Claude Project를 주 작업장으로, ChatGPT를 교대 작업장으로 사용하는 GitHub 체크포인트 기반 작업공간입니다.
+
+평소에는 Claude Project + Artifact에서 작업하고, 모델 교대·세션 종료·장 완료 때 승인된 변경과 미완료 상태를 GitHub main에 체크포인트로 저장합니다. ChatGPT와 Claude는 서로의 Artifact나 채팅을 전제로 하지 않고 최신 main + STATUS에서 이어갑니다.
 
 시작은 [START.md](START.md) → [STATUS.md](STATUS.md). 운영 규칙과 요청별 읽기 순서는 START에서 확인합니다.
 
