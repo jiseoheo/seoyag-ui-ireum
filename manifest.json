@@ -1,0 +1,144 @@
+{
+  "project": "서약의 이름으로",
+  "canonical": {
+    "manuscript": "manuscript/current.html",
+    "worklog": "meta/worklog.html",
+    "characters": "meta/characters.html",
+    "noel": "extras/noel.html"
+  },
+  "notion": {
+    "hub": "https://app.notion.com/p/3ee1485c92b481c89c74de5de06e3305",
+    "chapters": "https://app.notion.com/p/1f41bf73767741948b2dc0791f4b20d1",
+    "characters": "https://app.notion.com/p/5fd54367d78b413ba0e664fa61c93689",
+    "revision_issues": "https://app.notion.com/p/37830e5285a84793927c23cb88081895",
+    "timeline": "https://app.notion.com/p/6901ced3d31643e2ac587661038d08d6",
+    "world_settings": "https://app.notion.com/p/a5902ca12b11445da7da613a9f6f28f8"
+  },
+  "chapters": [
+    {
+      "order": 0,
+      "title": "서장",
+      "anchor": "서장"
+    },
+    {
+      "order": 1,
+      "title": "1. 서약의 이름으로",
+      "anchor": "1"
+    },
+    {
+      "order": 2,
+      "title": "2. 정직한 초상화",
+      "anchor": "2"
+    },
+    {
+      "order": 3,
+      "title": "3. 붉은 표식",
+      "anchor": "3"
+    },
+    {
+      "order": 4,
+      "title": "4. 초승달의 안쪽",
+      "anchor": "4"
+    },
+    {
+      "order": 5,
+      "title": "5. 검은 나비가 날던 밤",
+      "anchor": "5"
+    },
+    {
+      "order": 6,
+      "title": "6. 열 걸음의 거리",
+      "anchor": "6"
+    },
+    {
+      "order": 7,
+      "title": "7. 희푸른 어둠",
+      "anchor": "7"
+    },
+    {
+      "order": 8,
+      "title": "8. 눈보라 너머의 깃발",
+      "anchor": "8"
+    },
+    {
+      "order": 9,
+      "title": "9. 서랍 가장 아래",
+      "anchor": "9"
+    },
+    {
+      "order": 10,
+      "title": "10. 미끼와 바늘",
+      "anchor": "10"
+    },
+    {
+      "order": 11,
+      "title": "11. 백합 삼백 송이",
+      "anchor": "11"
+    },
+    {
+      "order": 12,
+      "title": "12. 놓을 것이오",
+      "anchor": "12"
+    },
+    {
+      "order": 13,
+      "title": "13. 머리카락 한 올의 거리",
+      "anchor": "13"
+    },
+    {
+      "order": 14,
+      "title": "14. 남쪽에서 온 반지",
+      "anchor": "14"
+    },
+    {
+      "order": 15,
+      "title": "15. 꿀빛 오후의 응접실",
+      "anchor": "15"
+    },
+    {
+      "order": 16,
+      "title": "16. 같은 장에 멈춘 보고서",
+      "anchor": "16"
+    },
+    {
+      "order": 17,
+      "title": "17. 비 오는 서명일",
+      "anchor": "17"
+    },
+    {
+      "order": 18,
+      "title": "18. 셈이 맞지 않는 장부",
+      "anchor": "18"
+    },
+    {
+      "order": 19,
+      "title": "19. 돌아와서 하겠다는 말",
+      "anchor": "19"
+    },
+    {
+      "order": 20,
+      "title": "20. 뜯기지 않은 봉인",
+      "anchor": "20"
+    },
+    {
+      "order": 21,
+      "title": "21. 마지막 기도문",
+      "anchor": "21"
+    },
+    {
+      "order": 22,
+      "title": "22. 소금기 어린 바람",
+      "anchor": "22"
+    },
+    {
+      "order": 23,
+      "title": "에필로그 1 — 아르벨리아의 겨울",
+      "anchor": "epilogue-1"
+    },
+    {
+      "order": 24,
+      "title": "에필로그 2 — 레몬나무 마을",
+      "anchor": "epilogue-2"
+    }
+  ]
+}
