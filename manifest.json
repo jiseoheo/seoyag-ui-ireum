@@ -2,17 +2,8 @@
   "project": "서약의 이름으로",
   "canonical": {
     "manuscript": "manuscript/current.html",
-    "worklog": "meta/worklog.html",
-    "characters": "meta/characters.html",
-    "noel": "extras/noel.html"
-  },
-  "notion": {
-    "hub": "https://app.notion.com/p/3ee1485c92b481c89c74de5de06e3305",
-    "chapters": "https://app.notion.com/p/1f41bf73767741948b2dc0791f4b20d1",
-    "characters": "https://app.notion.com/p/5fd54367d78b413ba0e664fa61c93689",
-    "revision_issues": "https://app.notion.com/p/37830e5285a84793927c23cb88081895",
-    "timeline": "https://app.notion.com/p/6901ced3d31643e2ac587661038d08d6",
-    "world_settings": "https://app.notion.com/p/a5902ca12b11445da7da613a9f6f28f8"
+    "characters": "canon/characters.html",
+    "world": "canon/world.md"
   },
   "chapters": [
     {
@@ -140,5 +131,22 @@
       "title": "에필로그 2 — 레몬나무 마을",
       "anchor": "epilogue-2"
     }
-  ]
+  ],
+  "operational": {
+    "start": "START.md",
+    "status": "STATUS.md",
+    "chapters": "meta/chapters.md",
+    "style": "meta/style.md"
+  },
+  "service": {
+    "noel_notebook": "service/noel-notebook.html"
+  },
+  "playground": {
+    "ideas": "playground/ideas.md"
+  },
+  "archive": {
+    "worklog": "archive/worklog.html",
+    "gpt_writing_guide": "archive/gpt-writing-guide.md",
+    "author_notes": "archive/author-notes.md"
+  }
 }
