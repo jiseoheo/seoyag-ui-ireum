@@ -14,44 +14,34 @@
 ## 2. 기준 자료
 현재 진행 위치·다음 작업을 말할 때는 기억, 이전 대화, 옛 Claude artifact를 근거로 삼지 않는다. 반드시 최신 `CURRENT_STATE.md`를 먼저 확인하고, 상세 상태가 필요하면 `meta/worklog.html`을 재확인한다. 둘과 과거 대화가 충돌하면 최신 GitHub 파일을 우선한다.
 
-### Claude 최신 상태 확인
-`raw.githubusercontent.com/.../main/...` 주소는 Claude 웹 가져오기에서 오래된 캐시가 돌아올 수 있으므로, 현재 진행상태를 확인할 때 그 주소를 직접 기준으로 삼지 않는다.
+### Claude 새 세션 파일 전달 규칙
+Claude 웹 가져오기는 주소를 임의로 조합하거나 GitHub API에서 새 주소를 만들어 여는 방식이 안정적이지 않다.
+따라서 <strong>Claude가 최신 파일을 찾는 책임을 지지 않는다.</strong>
 
-`CURRENT_STATE.md`를 읽을 때는 항상 먼저 GitHub의 최신 커밋을 조회한다.
+새 Claude 세션으로 넘어갈 때는, GitHub에 직접 접근 가능한 현재 작업 도우미(GPT)가 최신 커밋을 확인하여 <strong>커밋 고정 raw URL이 모두 들어간 인수인계 프롬프트</strong>를 만든다.
+작가는 그 프롬프트를 새 Claude 채팅의 첫 메시지에 그대로 붙여 넣는다.
 
-1. 아래 GitHub API 주소를 연다.
-   `https://api.github.com/repos/jiseoheo/seoyag-ui-ireum/commits?path=CURRENT_STATE.md&sha=main&per_page=1`
-2. 응답에서 최신 커밋 SHA를 확인한다.
-3. 그 SHA를 사용해 아래 형식의 고정 raw 주소를 연다.
-   `https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/<최신커밋SHA>/CURRENT_STATE.md`
-4. 그 파일의 `STATE_VERSION`, 현재 위치, 현재 다음 차례를 기준으로 작업 상태를 판단한다.
-5. 고정 커밋 파일을 실제로 열지 못했으면 기억이나 옛 상태로 대신하지 말고 최신 상태 확인 실패라고 말한다.
+Claude는 새 세션에서:
+- 첫 메시지에 직접 적힌 전체 URL만 작업 입력으로 사용한다.
+- URL을 추측·조합하지 않는다.
+- `main` raw 주소로 임의 대체하지 않는다.
+- 이전 대화, 기억, 옛 artifact의 진행상태로 빈칸을 메우지 않는다.
+- 필요한 파일 URL이 빠졌거나 열리지 않으면 누락된 파일만 정확히 말한다.
 
-`meta/worklog.html`의 최신 이력이 필요할 때도 같은 방식으로 해당 경로의 최신 커밋을 조회한 뒤 커밋 고정 raw 주소를 사용한다.
+현재 작업 위치는 `CURRENT_STATE.md`를 기준으로 판단한다.
+`meta/chapter-summaries.md`의 맨 아래 작업 위치처럼 오래된 운영 문구가 남아 있더라도 현재 위치 판단에는 사용하지 않는다.
+`meta/chapter-summaries.md`는 장거리 흐름·복선·관계선 확인용이며, 실제 문장은 `manuscript/current.html`에서 재확인한다.
 
-Claude 웹 도구는 아래 전체 주소로만 파일을 열 수 있다. 파일을 옮기거나 이름을 바꾸면 이 주소도 함께 고친다.
+### 인수인계 프롬프트 생성 규칙
+작가가 "인수인계 프롬프트 줘", "새 채팅으로 넘길게", "이어가기 프롬프트 줘"처럼 요청하면:
+1. 최신 `CURRENT_STATE.md`를 확인한다.
+2. 그 파일의 "인수인계에 필요한 파일" 목록을 읽는다.
+3. `ROUTER.md`, `CURRENT_STATE.md`와 목록에 적힌 각 파일의 최신 커밋 SHA를 GitHub에서 확인한다.
+4. 각 파일을 `https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/<커밋SHA>/<경로>` 형식의 고정 URL로 만든다.
+5. 새 Claude 채팅 첫 메시지에 그대로 붙일 수 있는 하나의 완성형 프롬프트로 제공한다.
+6. 프롬프트에는 현재 위치와 다음 작업도 짧게 적되, 상태 판단의 근거는 반드시 최신 `CURRENT_STATE.md`로 한다.
 
-- 원고 정본: `manuscript/current.html`
-  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/manuscript/current.html
-- 정본/충돌 규칙: `meta/canon-rules.md`
-  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/canon-rules.md
-- 현재 작업 시작점: `CURRENT_STATE.md`
-  최신 커밋 조회: https://api.github.com/repos/jiseoheo/seoyag-ui-ireum/commits?path=CURRENT_STATE.md&sha=main&per_page=1
-  실제 상태 파일은 위 조회에서 얻은 최신 커밋 SHA를 넣은 고정 raw 주소로 읽는다.
-- 장거리 문맥 인덱스: `meta/chapter-summaries.md`
-  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/chapter-summaries.md
-- 캐릭터 상세: `meta/characters.html`
-  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/characters.html
-- 작업 이력: `meta/worklog.html`
-  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/worklog.html
-- GPT 문체 상세: `meta/gpt-writing-guide.md`
-  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/gpt-writing-guide.md
-- 작가 메모: `meta/author-notes.md`
-  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/author-notes.md
-- 미확정 아이디어: `meta/ideas.md`
-  https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/meta/ideas.md
-- 세션 기록은 필요할 때 작가가 주소를 준다.
-- 상태·검색 인덱스: Notion
+작가는 평소 작업 중 URL을 관리할 필요가 없다. URL 묶음은 새 채팅으로 넘어갈 때만 생성한다.
 
 요약은 탐색용이다. 사실 확정은 원고와 확정 설정에서 재확인한다.
 충돌 시 임의로 덮어쓰지 말고 `meta/canon-rules.md`를 따른다.
@@ -60,16 +50,14 @@ Claude 웹 도구는 아래 전체 주소로만 파일을 열 수 있다. 파일
 
 ### A. 정확히 "안녕 소설아"
 일반 AI 인사 금지.
-이 호출은 새 작업 세션의 인사이자 인수인계 시작점이다.
+새 Claude 세션이라면 첫 메시지에 제공된 커밋 고정 URL 중 `ROUTER.md`, `CURRENT_STATE.md`, `meta/characters.html`을 필요한 범위에서 읽는다.
+현재 위치가 필요한 경우 반드시 그 메시지의 `CURRENT_STATE.md`를 기준으로 한다.
 
-1. `meta/characters.html`의 공통 대화 형식과 상시 4인 부분만 필요한 범위에서 읽는다.
-2. 위의 "Claude 최신 상태 확인" 절차로 `CURRENT_STATE.md`의 최신 커밋 SHA를 조회하고, 그 커밋에 고정된 `CURRENT_STATE.md`를 읽는다.
-3. 에필로그 이후 북부 대공저 서재, 벽난로 앞에서 🪶 지젤 → 🐺 카시안 → 🦉 루시엔 → 🍃 노엘 순서로 짧게 인사한다.
-4. 마지막에 📒 오스발트가 <strong>방금 확인한 최신 CURRENT_STATE의 실제 진행상황</strong>을 짧게 인수인계하고, 오늘 무엇을 할지 묻는다.
+에필로그 이후 북부 대공저 서재, 벽난로 앞에서 🪶 지젤 → 🐺 카시안 → 🦉 루시엔 → 🍃 노엘 순서로 짧게 인사한다.
+마지막에 📒 오스발트가 최신 `CURRENT_STATE.md`에서 확인한 실제 진행상황을 짧게 인수인계하고 오늘 무엇을 할지 묻는다.
 
-오스발트는 진행상황을 말해도 된다. 오히려 새 세션의 인수인계를 위해 현재 완료 범위, 현재 단계, 다음 차례를 필요한 만큼 짧게 보고한다.
-단, 기억·이전 대화·옛 artifact·`main` raw 캐시에서 본 상태를 섞지 않는다. 반드시 그 응답에서 새로 확인한 최신 커밋 고정 `CURRENT_STATE.md`만 기준으로 한다.
-`STATE_VERSION`이 없거나 최신 커밋 고정 파일을 열지 못했으면 장 번호를 추측하지 말고 최신 상태를 확인하지 못했다고 오스발트가 보고한다.
+오스발트는 현재 완료 범위, 현재 단계, 다음 차례를 말해도 된다.
+단, URL을 열지 못했거나 `STATE_VERSION`을 확인하지 못했으면 장 번호를 추측하지 않는다.
 이 호출만으로 원고나 설정을 수정하지 않는다.
 
 ### B. 자유 대화 / 캐릭터 인터뷰 / 잡담
@@ -82,7 +70,7 @@ Claude 웹 도구는 아래 전체 주소로만 파일을 열 수 있다. 파일
 작품 사실이 필요하지 않으면 원고·설정 파일을 추가로 읽지 않는다.
 
 ### D. "다음" / 장별 수정
-1. GitHub API로 `CURRENT_STATE.md`의 최신 커밋 SHA를 조회한 뒤, 그 SHA가 들어간 고정 raw 주소로 파일을 읽어 `STATE_VERSION`과 현재 위치를 확인.
+1. 현재 세션에 직접 제공된 커밋 고정 `CURRENT_STATE.md`를 읽어 `STATE_VERSION`과 현재 위치를 확인. 필요한 입력 파일은 `CURRENT_STATE.md`의 "인수인계에 필요한 파일" 목록과 대조한다.
 2. Notion Revision Issues에서 대상 장의 미완료 수정거리 확인.
 3. `meta/chapter-summaries.md`에서 대상 장과 직전·직후 장 요약 확인.
 4. `manuscript/current.html`에서 대상 장의 필요한 원문만 읽기.
@@ -109,6 +97,11 @@ Claude 웹 도구는 아래 전체 주소로만 파일을 열 수 있다. 파일
 
 ### H. 원형 / 변경이력
 Git 이력을 기준으로 실제 과거 버전을 찾는다. 기억으로 재구성하지 않는다.
+
+### I. 인수인계 / 새 채팅 시작 프롬프트
+작가가 인수인계 프롬프트를 요청하면 캐릭터 역할극보다 실무 응답을 우선한다.
+위 "인수인계 프롬프트 생성 규칙"에 따라 그 시점의 최신 커밋을 확인하고, 새 Claude 채팅에 한 번 붙여 넣으면 되는 완성형 시작 메시지를 만든다.
+과거에 만들어 둔 URL 묶음을 재사용하지 않는다.
 
 ## 4. 감상·검토 역할
 감상모드는 먼저 독자로서 읽는다. 교정을 섞지 않는다.
