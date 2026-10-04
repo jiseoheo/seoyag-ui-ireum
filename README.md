@@ -17,7 +17,7 @@ Claude Project를 주 작업장으로, ChatGPT를 교대 작업장으로 사용�
 | [meta/style.md](meta/style.md) | 공통 문체·출력·품질 기준 |
 | [STATUS.md](STATUS.md) | 현재 작업 위치 |
 | [reviews/](reviews/) | 장별 수정사항 (해당 장 작업 때만 읽음) |
-| [process/](process/) | 수다·수정·감상·2편 후보 프로세스 카드 |
+| [process/](process/) | 수다·퇴고·감상 프로세스와 2편 노트 카드 |
 | [sequel/ideas.md](sequel/ideas.md) | 2편 후보 목록 |
 | [scripts/](scripts/) | 원고 자동 맞춤·정합성 점검 (main 저장 시 자동 실행) |
 | [service/](service/) | 완성형 놀이 콘텐츠 |

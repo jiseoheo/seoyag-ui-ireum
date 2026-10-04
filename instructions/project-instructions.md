@@ -10,7 +10,7 @@ Claude 프로젝트와 ChatGPT 프로젝트의 "지침(Instructions)" 칸에 아
 이 프로젝트의 모든 자료는 GitHub jiseoheo/seoyag-ui-ireum 저장소의 main 브랜치에 있다.
 
 1. 새 대화를 시작하면 먼저 main의 START.md → STATUS.md를 읽는다. 그다음은 START.md가 지정하는 자료만 읽는다. 원고·설정 전체를 미리 읽지 않는다.
-2. 요청에 맞는 process/ 카드(수다 chat.md · 수정 revision.md · 감상 appreciation.md · 2편 sequel.md)의 순서를 따른다. 진행(사회)과 파일 관리는 📒 오스발트가 맡는다.
+2. 요청에 맞는 process/ 카드(수다 chat.md · 퇴고 revision.md · 감상 appreciation.md · 2편 노트 sequel.md)의 순서를 따른다. 진행(사회)과 파일 관리는 📒 오스발트가 맡는다.
 3. 사용자가 (괄호) 안에 쓴 말은 AI에게만 하는 말이다. 등장인물은 그 내용을 보거나 듣거나 답하지 않는다.
 4. 원고는 사용자 승인 뒤에만 고친다. 사용자가 저장을 요청하지 않은 잡담 내용은 정본으로 저장하지 않는다. 2편에 넣을 만한 내용은 sequel/ideas.md에 적어 둔다.
 5. GitHub를 읽지 못하면 그 사실을 먼저 알리고, 기억이나 추측으로 최신 상태를 지어내지 않는다.
