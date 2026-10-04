@@ -4,114 +4,180 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>[서약의 이름으로] 노엘의 견문록</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Hi+Melody&family=East+Sea+Dokdo&family=Nanum+Brush+Script&family=Gowun+Batang&family=Song+Myung&display=swap" rel="stylesheet">
 <style>
+
+@font-face{font-family:"UnPilgi";src:url("https://mirrors.ibiblio.org/pub/mirrors/CTAN/fonts/unfonts-core/UnPilgi.ttf") format("truetype");font-style:normal;font-weight:400;font-display:block;}
+@font-face{font-family:"UnGungseo";src:url("https://mirrors.ibiblio.org/pub/mirrors/CTAN/fonts/unfonts-core/UnGungseo.ttf") format("truetype");font-style:normal;font-weight:400;font-display:block;}
+@font-face{font-family:"UnPen";src:url("https://mirrors.ibiblio.org/pub/mirrors/CTAN/fonts/unfonts-extra/UnPen.ttf") format("truetype");font-style:normal;font-weight:400;font-display:block;}
+@font-face{font-family:"UnPenheulim";src:url("https://mirrors.ibiblio.org/pub/mirrors/CTAN/fonts/unfonts-extra/UnPenheulim.ttf") format("truetype");font-style:normal;font-weight:400;font-display:block;}
+@font-face{font-family:"UnPilgia";src:url("https://mirrors.ibiblio.org/pub/mirrors/CTAN/fonts/unfonts-extra/UnPilgia.ttf") format("truetype");font-style:normal;font-weight:400;font-display:block;}
+
+
+
 :root{
-  --desk:#C9C2B3; --paper:#ECE5D5; --paper-edge:#D9CFB9; --chain:rgba(120,98,60,.07); --fold:rgba(110,85,50,.28);
-  --noel:#24201B; --oswald:#6B5A3E; --jizel:#93392B; --cassian:#44607A; --lucien:#3D6658; --faint:#8A7B62;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --desk:#14120F; --paper:#2A251E; --paper-edge:#3A3328; --chain:rgba(230,210,170,.04); --fold:rgba(230,210,170,.18);
-    --noel:#E8DFCF; --oswald:#CDB78F; --jizel:#E39A8C; --cassian:#A3BCD3; --lucien:#9FCBB9; --faint:#A8997F;
-  }
+  --desk:#4c392b;
+  --paper:#efe4c9;
+  --paper2:#e8d9b8;
+  --edge:#c9b184;
+  --rule:rgba(103,81,53,.11);
+  --chain:rgba(103,81,53,.07);
+  --margin-red:rgba(135,61,50,.28);
+  --ink:#2a241e;
+  --faint:#806f58;
+  --noel:#2a241e;
+  --jizel:#7d2f2a;
+  --cassian:#3b536b;
+  --lucien:#315d50;
+  --oswald:#655238;
+  --gold:#8a6c36;
+  --night-paper:#2a261f;
+  --night-rule:rgba(229,210,174,.06);
 }
 :root[data-theme="dark"]{
-  --desk:#14120F; --paper:#2A251E; --paper-edge:#3A3328; --chain:rgba(230,210,170,.04); --fold:rgba(230,210,170,.18);
-  --noel:#E8DFCF; --oswald:#CDB78F; --jizel:#E39A8C; --cassian:#A3BCD3; --lucien:#9FCBB9; --faint:#A8997F;
+  --desk:#17120e;--paper:#29251f;--paper2:#211e19;--edge:#4a4032;
+  --rule:rgba(229,210,174,.065);--chain:rgba(229,210,174,.035);--margin-red:rgba(181,101,87,.22);
+  --ink:#eadfc9;--faint:#ad9c80;--noel:#eee3cf;--jizel:#e5a29a;--cassian:#a9bed1;--lucien:#9cc8b8;--oswald:#c2ae8d;--gold:#bea16c;
 }
-:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);}
-html{scroll-padding-top:env(safe-area-inset-top,0px);}
-*,*::before,*::after{box-sizing:inherit;}
-body{margin:0;background:var(--desk);color:var(--noel);
-  font-family:"Nanum Pen Script","Gowun Batang",cursive,serif;font-size:20.5px;line-height:1.4;}
-.sheet{
-  max-width:720px;margin:24px auto 48px;position:relative;
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--desk)}
+body{
+  margin:0;
+  color:var(--ink);
+  font-family:"UnPilgia","Noto Serif CJK KR","AppleMyungjo","Batang",serif;
+  font-size:18px;
+  line-height:1.42;
   background:
-    radial-gradient(ellipse at 50% 40%, var(--paper) 60%, var(--paper-edge) 100%);
-  box-shadow:0 1px 0 var(--paper-edge), 0 18px 30px -18px rgba(40,30,15,.45);
-  padding:44px 0 56px;
+    radial-gradient(circle at 20% 0%,rgba(255,255,255,.08),transparent 26%),
+    linear-gradient(90deg,rgba(255,255,255,.025),transparent 30%,rgba(0,0,0,.025)),
+    #4c392b;
 }
-.row{display:grid;grid-template-columns:minmax(0,1fr) 31%;}
-.main{padding:0 22px 0 44px;}
-.margin{padding:0 18px 0 16px;border-left:1px solid var(--fold);}
-.row + .row .main, .row + .row .margin{padding-top:14px;}
-h1{font-weight:400;font-size:41px;line-height:1.1;margin:0 0 6px;transform:rotate(-1.4deg);transform-origin:left;}
-.byline{margin:0;}
-h2{font-weight:400;font-size:26.5px;margin:22px 0 2px;display:inline-block;
-  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 5 Q10 1 20 5 T40 5' fill='none' stroke='%23000' stroke-opacity='.35' stroke-width='1.6'/%3E%3C/svg%3E") repeat-x left bottom;
-  padding-bottom:6px;}
-p{margin:0 0 6px;}
-.word{font-weight:400;font-size:24.5px;}
-s{text-decoration-thickness:1.5px;}
-ol{margin:4px 0 6px;padding-left:1.3em;}
-/* margin hands */
-.m{display:block;margin:2px 0 10px;line-height:1.35;}
-.j{color:var(--jizel);font-family:"Hi Melody","Gowun Batang",cursive,serif;font-size:15.5px;transform:rotate(-.8deg);letter-spacing:.01em;}
-.c{color:var(--cassian);font-family:"East Sea Dokdo","Gowun Batang",cursive,serif;font-size:19.5px;line-height:1.15;letter-spacing:.03em;transform:rotate(-1.5deg);}
-.l{color:var(--lucien);font-family:"Nanum Brush Script","Gowun Batang",cursive,serif;font-size:18.5px;line-height:1.2;transform:skewX(-9deg);}
-.n{color:var(--noel);font-size:17px;transform:rotate(-2deg);}
-.m.j,.m.c,.m.l,.m.n{display:block;transform-origin:left top;}
-.arrow{font-size:13px;opacity:.8;}
-.later{margin-top:4px;}
-.orig{font-size:13px;font-weight:400;color:var(--faint);margin-left:4px;}
-@media (max-width:520px){.orig{font-size:11px;}}
-.mark{font-weight:700;}
-.ink{font-size:13.5px;color:var(--faint);}
-.ink b{font-weight:400;}
-.ink .k{display:block;}
-.todo{list-style:none;padding:0;margin:4px 0 0;}
-.todo li{position:relative;padding-left:26px;margin-bottom:6px;}
-.todo li::before{content:"○";position:absolute;left:2px;top:0;}
-.todo li.done::before{content:"◉";}
-@media (max-width:520px){
-  body{font-size:18px;}
-  .sheet{margin:0;box-shadow:none;padding:32px 0 40px;}
-  .row{grid-template-columns:minmax(0,1fr) 36%;}
-  .main{padding:0 12px 0 26px;}
-  .margin{padding:0 10px 0 10px;}
-  h1{font-size:29px;}
-  h2{font-size:23px;}
-  .word{font-size:21px;}
-  .j{font-size:13px;} .l{font-size:16px;} .c{font-size:17px;} .n{font-size:15.5px;}
-  .ink{font-size:11.5px;}
+.sheet{
+  position:relative;
+  width:720px;
+  margin:28px auto 46px;
+  padding:48px 34px 58px 70px;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg, transparent 0 45px, var(--margin-red) 45px 46px, transparent 46px),
+    repeating-linear-gradient(180deg,transparent 0 31px,var(--rule) 31px 32px),
+    repeating-linear-gradient(90deg,transparent 0 88px,var(--chain) 88px 89px),
+    radial-gradient(ellipse at 55% 35%,rgba(255,255,255,.34),transparent 56%),
+    linear-gradient(180deg,var(--paper),var(--paper2));
+  border:1px solid rgba(80,58,32,.20);
+  border-radius:2px 5px 4px 2px;
+  box-shadow:0 1px 0 rgba(255,255,255,.35) inset, 0 18px 36px rgba(26,16,8,.32);
 }
-.sheet + .sheet{margin-top:28px;}
-.folio{position:absolute;bottom:16px;right:22px;font-size:14.5px;color:var(--faint);transform:rotate(-3deg);}
-.folio.left{right:auto;left:30px;}
-@media (max-width:520px){.sheet + .sheet{margin-top:14px;border-top:1px dashed var(--fold);} .folio{font-size:13px;}}
-body{counter-reset:page;}
-.sheet{counter-increment:page;}
-.sheet + .sheet{margin-top:28px;}
-.sheet > .row:first-child .main h2{margin-top:0;}
-@media (max-width:520px){.sheet + .sheet{margin-top:0;border-top:10px solid var(--desk);}}
-.pts{list-style:none;padding:0;margin:2px 0 10px;}
-.pts li{position:relative;padding-left:16px;margin-bottom:2px;}
-.pts li::before{content:"-";position:absolute;left:3px;top:0;}
-.lab{display:inline-block;min-width:2.6em;color:var(--faint);font-size:.85em;}
-.toc{list-style:none;padding:0;margin:4px 0 0;}
-.toc li{margin-bottom:2px;}
-.date{font-size:.85em;color:var(--faint);margin-left:4px;}
-.kv{border-collapse:collapse;width:100%;margin:2px 0 12px;}
-.kv th,.kv td{vertical-align:top;padding:3px 6px 3px 0;border-bottom:1px dashed var(--fold);text-align:left;}
-.kv tr:last-child th,.kv tr:last-child td{border-bottom:none;}
-.kv th{font-weight:400;color:var(--faint);font-size:.85em;white-space:nowrap;width:1%;padding-right:12px;padding-top:6px;}
-.kv ol{margin:0;padding-left:1.2em;}
-.o{color:var(--oswald);font-family:"Song Myung","Gowun Batang",serif;font-size:13.5px;}
-.ledger{border-collapse:collapse;width:100%;margin:4px 0 10px;font-size:.92em;}
-.ledger th{font-weight:400;color:var(--faint);font-size:.8em;text-align:left;padding:2px 8px 4px 0;border-bottom:1px solid var(--fold);}
-.ledger td{vertical-align:top;padding:5px 8px 5px 0;border-bottom:1px dashed var(--fold);}
-.ledger tr:last-child td{border-bottom:none;}
-.ledger td:first-child{white-space:nowrap;}
-.ledger .j,.ledger .c,.ledger .l,.ledger .o{display:inline-block;}
-@media (max-width:520px){.o{font-size:12px;}}
-a.hid{color:inherit;text-decoration:none;cursor:pointer;}
-a.hid:hover,a.hid:focus-visible{text-decoration:none;outline:none;}
-html{scroll-behavior:smooth;}
-.paper-toggle{margin:6px 0 0;font-size:.85em;color:var(--faint);}
-.paper-toggle a.on{color:var(--noel);border-bottom:1px dashed var(--fold);}
+.sheet::before{
+  content:"";
+  position:absolute;left:0;top:0;bottom:0;width:34px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='42' viewBox='0 0 34 42'%3E%3Cpath d='M12 14 L22 22 M22 14 L12 22' stroke='%237d6548' stroke-width='1.25' stroke-linecap='round' opacity='.8'/%3E%3C/svg%3E") center top/34px 42px repeat-y,
+    linear-gradient(90deg,rgba(88,62,39,.34),rgba(185,158,112,.42) 48%,rgba(255,255,255,.08) 52%,rgba(85,61,38,.16));
+  box-shadow:inset -1px 0 rgba(70,48,26,.20), inset 1px 0 rgba(255,255,255,.10);
+}
+.sheet::after{
+  content:"";
+  position:absolute;right:-7px;top:0;bottom:0;width:12px;
+  background:linear-gradient(90deg,rgba(120,90,50,.08),rgba(70,50,28,.26));
+  clip-path:polygon(0 0,100% 1%,72% 8%,100% 15%,74% 22%,100% 31%,70% 40%,100% 49%,75% 58%,100% 68%,72% 78%,100% 88%,68% 96%,100% 100%,0 100%);
+}
+.row{display:grid;grid-template-columns:minmax(0,1fr) 30%;position:relative;z-index:1}
+.main{padding:0 24px 0 0}
+.margin{padding:0 0 0 16px;border-left:1px solid rgba(105,81,49,.22)}
+.row+.row{margin-top:12px}
+.row+.row .main,.row+.row .margin{padding-top:8px}
+h1{
+  font:400 38px/1.06 "UnPilgia","Noto Serif CJK KR","AppleMyungjo","Batang",serif;
+  margin:0 0 8px;
+  transform:rotate(-.8deg);
+  transform-origin:left;
+  letter-spacing:-.015em;
+}
+.byline{margin:0 0 2px;color:var(--ink)}
+.byline::before{
+  content:"개인 견문 · 북부 기사단";
+  display:block;
+  width:max-content;
+  margin:0 0 11px;
+  padding:3px 9px 2px;
+  border:1px solid rgba(88,64,33,.38);
+  font:13px/1.4 "UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;
+  letter-spacing:.06em;
+  color:var(--faint);
+  transform:rotate(-.4deg);
+}
+h2{
+  font:400 24px/1.15 "UnPilgia","Noto Serif CJK KR","AppleMyungjo","Batang",serif;
+  margin:20px 0 7px;
+  padding:0 18px 3px 0;
+  display:inline-block;
+  border-bottom:1px solid rgba(77,59,38,.38);
+  position:relative;
+}
+h2::after{content:"";position:absolute;left:0;right:-6px;bottom:-3px;height:1px;background:rgba(77,59,38,.18);transform:rotate(-.3deg)}
+p{margin:0 0 6px}
+.word{font-size:21px}
+s{text-decoration-thickness:1.25px;text-decoration-color:rgba(55,41,27,.62)}
+ol{margin:3px 0 7px;padding-left:1.3em}
+.m{display:block;margin:2px 0 10px;line-height:1.34;background:none;padding:0;box-shadow:none}
+.j{color:var(--jizel);font-family:"UnPilgi","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:14.5px;transform:rotate(-.2deg)}
+.c{color:var(--cassian);font-family:"UnPen","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:17px;line-height:1.12;letter-spacing:.015em;transform:rotate(-.3deg)}
+.l{color:var(--lucien);font-family:"UnPenheulim","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:17px;line-height:1.18;transform:rotate(.12deg)}
+.n{color:var(--noel);font-family:"UnPilgia","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:15.5px;transform:rotate(-.22deg)}
+.o{color:var(--oswald);font-family:"UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:12.5px;letter-spacing:.005em}
+.m.j,.m.c,.m.l,.m.n{transform-origin:left top}
+.orig{font-size:11px;color:var(--faint);margin-left:5px;font-family:"UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif}
+.mark{font-weight:700}
+.ink{font:12px/1.42 "UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;color:var(--faint);border-top:1px solid rgba(91,68,39,.24);border-bottom:1px solid rgba(91,68,39,.16);padding:8px 0;margin-top:5px}
+.ink .k{display:block}
+.todo{list-style:none;padding:0;margin:3px 0 0}
+.todo li{position:relative;padding-left:24px;margin:0 0 6px}
+.todo li::before{content:"□";position:absolute;left:2px;top:0;font-family:"UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;color:var(--faint)}
+.todo li.done::before{content:"☒"}
+.folio{position:absolute;bottom:16px;right:24px;font:13px/1.2 "UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;color:var(--faint)}
+.folio.left{right:auto;left:58px}
+.pts{list-style:none;padding:0;margin:2px 0 10px}
+.pts li{position:relative;padding-left:16px;margin-bottom:3px}
+.pts li::before{content:"—";position:absolute;left:0;top:0;color:var(--faint)}
+.toc{list-style:none;padding:0;margin:3px 0 0}
+.toc li{margin-bottom:3px}
+.toc a{border-bottom:1px dotted rgba(92,70,42,.24)}
+.date{font-size:.84em;color:var(--faint);margin-left:3px;font-family:"UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif}
+.kv{border-collapse:collapse;width:100%;margin:2px 0 12px;border-top:1px solid rgba(90,67,38,.25);border-bottom:1px solid rgba(90,67,38,.18)}
+.kv th,.kv td{vertical-align:top;padding:4px 5px 4px 0;border-bottom:1px dotted rgba(90,67,38,.19);text-align:left}
+.kv tr:last-child th,.kv tr:last-child td{border-bottom:none}
+.kv th{font:400 .82em/1.4 "UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;color:var(--faint);white-space:nowrap;width:1%;padding-right:11px}
+.kv ol{margin:0;padding-left:1.2em}
+.ledger{border-collapse:collapse;width:100%;margin:4px 0 10px;font-size:.92em;border-top:1px solid rgba(84,63,37,.42);border-bottom:1px solid rgba(84,63,37,.30)}
+.ledger th{font:400 .78em/1.3 "UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;color:var(--faint);text-align:left;padding:3px 8px 4px 0;border-bottom:1px solid rgba(84,63,37,.30)}
+.ledger td{vertical-align:top;padding:5px 8px 5px 0;border-bottom:1px dotted rgba(84,63,37,.18)}
+.ledger tr:last-child td{border-bottom:none}
+.ledger td:first-child{white-space:nowrap}
+.ledger .j,.ledger .c,.ledger .l,.ledger .o{display:inline-block}
+a.hid{color:inherit;text-decoration:none;cursor:pointer}
+.paper-toggle{margin:7px 0 0;font:13px/1.4 "UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;color:var(--faint)}
+.paper-toggle a{display:inline-block;padding:1px 7px;border:1px solid rgba(84,63,37,.26);background:rgba(255,255,255,.12);margin-right:2px}
+.paper-toggle a.on{border-color:rgba(84,63,37,.55);box-shadow:inset 0 -2px rgba(125,47,42,.16);color:var(--ink)}
+/* understated period details */
+.sheet#p1 > .row:first-of-type .main::after{
+  content:"N.R.A.";
+  position:absolute;right:35.5%;top:16px;
+  width:58px;height:58px;border:1px double rgba(116,78,45,.32);border-radius:50%;
+  display:grid;place-items:center;
+  font:15px/1 "UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;color:rgba(91,61,36,.44);transform:rotate(7deg)
+}
+.sheet#p4::marker{display:none}
+@media(max-width:520px){
+  body{font-size:16px}
+  .sheet{width:auto;margin:0;padding:34px 12px 42px 44px;box-shadow:none;border-left:0;border-right:0}
+  .sheet::before{width:24px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='34' viewBox='0 0 24 34'%3E%3Cpath d='M8 11 L16 18 M16 11 L8 18' stroke='%237d6548' stroke-width='1.1' stroke-linecap='round' opacity='.8'/%3E%3C/svg%3E") center top/24px 34px repeat-y,linear-gradient(90deg,rgba(88,62,39,.34),rgba(185,158,112,.42) 48%,rgba(255,255,255,.08) 52%,rgba(85,61,38,.16));}
+  .sheet{background:linear-gradient(90deg,transparent 0 31px,var(--margin-red) 31px 32px,transparent 32px),repeating-linear-gradient(180deg,transparent 0 28px,var(--rule) 28px 29px),repeating-linear-gradient(90deg,transparent 0 75px,var(--chain) 75px 76px),radial-gradient(ellipse at 55% 35%,rgba(255,255,255,.34),transparent 56%),linear-gradient(180deg,var(--paper),var(--paper2))}
+  .row{grid-template-columns:minmax(0,1fr) 36%}
+  .main{padding-right:10px}.margin{padding-left:9px}
+  h1{font-size:27px}.byline{font-size:14px}h2{font-size:20px}.word{font-size:18.5px}
+  .j{font-size:12.5px}.l{font-size:14.5px}.c{font-size:15.5px}.n{font-size:13.5px}.o{font-size:11px}.orig{font-size:9.5px}.ink{font-size:10px}
+  .sheet#p1 > .row:first-of-type .main::after{right:38%;top:12px;width:42px;height:42px;font-size:11px}
+}
 </style>
 </head>
 <body>
@@ -131,6 +197,7 @@ html{scroll-behavior:smooth;}
       <span class="k" style="color:var(--cassian)">청회색 잉크 · 매형</span>
       <span class="k" style="color:var(--lucien)">초록 잉크 · 국장님<br>(어느새 써 있음)</span>
       <span class="k" style="color:var(--oswald)">갈색 잉크 · 오스발트</span>
+      <span class="k" style="margin-top:5px">필체 · 지젤=UnPilgi / 카시안=UnPen / 루시엔=UnPenheulim / 노엘=UnPilgia / 오스발트=UnGungseo</span>
     </p>
   </div>
 </div>
@@ -181,6 +248,8 @@ html{scroll-behavior:smooth;}
       <li>본문은 내 자리, 여백은 남의 자리.</li>
       <li>작가님 세계 말은 우리 말로 바꿔 크게, 원래 말은 옆에 작게. 출처는 남겨 둔다. (10월 2일 제정, 작가님 승인)</li>
       <li>항목은 뜻 · 예 · 메모 순으로 짧게 쓴다. (작가님 요청)</li>
+      <li>작가님과 놀거나 원고를 읽다가 연구할 만한 말·관찰이 생기면 내가 먼저 골라 적어도 된다. 단, 새로 적은 날에는 작가님께 추가한 내용을 바로 보여 드린다. 견문록 기록은 원고 정본과 구분한다. (10월 4일 작가님 허락)</li>
+      <li>이 공책은 <strong>채팅 기준 서비스</strong>다. 여기 적힌 여백 대화·필체·놀이 기록은 원고 정본 사건을 새로 확정하지 않는다. 노엘 본문은 스물네 살 성인의 자연스럽고 빠른 필기체를 기준으로 한다.</li>
     </ol>
   </div>
   <div class="margin">
@@ -273,7 +342,7 @@ html{scroll-behavior:smooth;}
     <table class="kv"><tr><th>뜻</th><td>땅 위로 다니는, 사람이 많이 타는 큰 마차. 땅굴마차와 형제뻘.</td></tr><tr><th>예</th><td>작가님 출근 마차. 편도 한 시간 반.</td></tr><tr><th>메모</th><td>황도에도 있는 말이라 기사단에서 써도 주문으로 오해받지 않는다. 매형은 듣자마자 북부 첫 초소까지의 거리와 비교했다. 본인은 위로였다고 한다. 아무도 몰랐다.</td></tr></table>
   </div>
   <div class="margin">
-    <span class="m c"><s>버스와 밀웜을</s> 둘을 한 줄에 쓰지 마라.</span>
+    <span class="m c"><s>버스와 밀웜을</s> 둘을 한 줄에 쓰지 마시오.</span>
     <span class="m n">← 그래서 멀리 떨어뜨려 놨음. 이름도 바꿨으니 이제 괜찮죠? 죄송해요 작가님.</span>
 
   </div>
@@ -434,6 +503,8 @@ html{scroll-behavior:smooth;}
     <h2>우리끼리 쓰는 말</h2>
     <p><span class="word">낭독 · 검토 · 정독</span><span class="orig">작가님 명명</span></p>
     <table class="kv"><tr><th>낭독</th><td>읽으면서 반응하는 방식.</td></tr><tr><th>검토</th><td>각자 맡은 것만 짚는 방식. 매형은 흐름, 누나는 셈, 국장님은 정황, 나는 새 제안.</td></tr><tr><th>정독</th><td>둘 다.</td></tr><tr><th>메모</th><td>다들 틀린 곳을 찾을 때 나는 새로 만드는 쪽이다. 맡은 일 중 가장 마음에 든다.</td></tr></table>
+    <p><span class="word">감상</span><span class="orig">작가님 말: 감상모드</span></p>
+    <table class="kv"><tr><th>뜻</th><td>고치지 않고 독자로 원고를 읽으면서 감정, 기억에 남는 물건과 대사, 관계, 다음 장 기대, 장의 공기를 말하는 방식.</td></tr><tr><th>지금</th><td>서장부터 처음으로 다시 읽는 중. 9장까지 왔다.</td></tr><tr><th>규칙</th><td>장마다 관련 인물이 같이 볼 수 있지만, 새로 부르기 전에는 오스발트가 작가님께 먼저 묻는다. 원문은 줄이지 않는다.</td></tr><tr><th>메모</th><td>고치는 눈을 잠깐 치워 두니까 예전에 본 장면인데도 다른 데가 보인다. 이건 꽤 마음에 든다.</td></tr></table>
     <p><span class="word">반 박자 늦는 남자 보호협회</span><span class="orig">독자님 필명</span></p>
     <table class="kv"><tr><th>뜻</th><td>매형 편 독자님. 별 다섯.</td></tr><tr><th>메모</th><td>필명을 듣고 소파에서 떨어질 뻔했다.</td></tr></table>
     <p><span class="word">초승달 안쪽에 사는 사람</span><span class="orig">독자님 필명</span></p>
@@ -533,7 +604,7 @@ html{scroll-behavior:smooth;}
     <span class="m j">비유야. 장난칠 때 얼굴이라는.</span>
     <span class="m n">← 그러니까 칭찬.</span>
     <span class="m l">제 이름은 원고에 비유로 들어가지 않았군요. 다행인지 서운한지 모르겠습니다.</span>
-    <span class="m c">출석 명단 건은 적지 마라.</span>
+    <span class="m c">출석 명단 건은 적지 마시오.</span>
     <span class="o m">이미 적었습니다.</span>
   </div>
 </div>
@@ -643,6 +714,18 @@ html{scroll-behavior:smooth;}
   </div>
 </div>
 
+<div class="row">
+  <div class="main">
+    <p><span class="word">관찰 7. 처음부터 다시 읽으면 사람도 달라 보인다</span></p>
+    <table class="kv"><tr><th>누나</th><td>처음부터 가족을 먼저 셌다. 자기 이름 앞에서는 안 떨리고 내 이름 앞에서 손이 떨렸다.</td></tr><tr><th>매형</th><td>앞을 막지 못하겠다고 생각한 뒤부터 정말 뒤에 있었다. 성문, 여관 선금, 가짜 바퀴 자국, 헛간까지.</td></tr><tr><th>국장님</th><td>웃음보다 손이 먼저 변했다. 집행일에서 멈추고, 검을 먼저 내려놓고, 밤에는 살아 있는지 숨을 셌다.</td></tr><tr><th>본인</th><td>생각보다 일찍 다 보고 있었다. 서부 작황 때 문을 닫아 준 것도 나였다. 훌륭함.</td></tr><tr><th>결론</th><td>결말을 알고 다시 읽으면 복선보다 먼저, 그때는 이름 붙이지 못했던 마음이 보인다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m n">작가님이 처음부터 다시 보자고 해서 생긴 기록.</span>
+    <span class="m j">마지막 줄은 괜찮네.</span>
+    <span class="m n">← 누나한테 칭찬받음. 기록.</span>
+  </div>
+</div>
+
 <span class="folio ">- 5 -</span>
 </article>
 
@@ -651,7 +734,7 @@ html{scroll-behavior:smooth;}
   var root=document.documentElement,links=document.querySelectorAll('.paper-toggle a');
   function mark(){var cur=root.getAttribute('data-theme')||(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
     links.forEach(function(a){a.classList.toggle('on',a.getAttribute('data-set')===cur);});}
-  try{var s=localStorage.getItem('noel-paper');if(s)root.setAttribute('data-theme',s);}catch(e){}
+  try{var st=localStorage.getItem('noel-paper');if(st)root.setAttribute('data-theme',st);}catch(e){}
   links.forEach(function(a){a.addEventListener('click',function(ev){ev.preventDefault();var v=a.getAttribute('data-set');
     root.setAttribute('data-theme',v);try{localStorage.setItem('noel-paper',v);}catch(e){}mark();});});
   mark();
