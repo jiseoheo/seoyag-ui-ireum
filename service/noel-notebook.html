@@ -4,9 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>[서약의 이름으로] 노엘의 견문록</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Hi+Melody&family=East+Sea+Dokdo&family=Nanum+Brush+Script&family=Gowun+Batang&family=Song+Myung&display=swap" rel="stylesheet">
 <style>
 :root{
   --desk:#C9C2B3; --paper:#ECE5D5; --paper-edge:#D9CFB9; --chain:rgba(120,98,60,.07); --fold:rgba(110,85,50,.28);
@@ -26,7 +23,7 @@
 html{scroll-padding-top:env(safe-area-inset-top,0px);}
 *,*::before,*::after{box-sizing:inherit;}
 body{margin:0;background:var(--desk);color:var(--noel);
-  font-family:"Nanum Pen Script","Gowun Batang",cursive,serif;font-size:20.5px;line-height:1.4;}
+  font-family:"UnPilgia","Noto Serif CJK KR",serif;font-size:20.5px;line-height:1.4;}
 .sheet{
   max-width:720px;margin:24px auto 48px;position:relative;
   background:
@@ -49,10 +46,10 @@ s{text-decoration-thickness:1.5px;}
 ol{margin:4px 0 6px;padding-left:1.3em;}
 /* margin hands */
 .m{display:block;margin:2px 0 10px;line-height:1.35;}
-.j{color:var(--jizel);font-family:"Hi Melody","Gowun Batang",cursive,serif;font-size:15.5px;transform:rotate(-.8deg);letter-spacing:.01em;}
-.c{color:var(--cassian);font-family:"East Sea Dokdo","Gowun Batang",cursive,serif;font-size:19.5px;line-height:1.15;letter-spacing:.03em;transform:rotate(-1.5deg);}
-.l{color:var(--lucien);font-family:"Nanum Brush Script","Gowun Batang",cursive,serif;font-size:18.5px;line-height:1.2;transform:skewX(-9deg);}
-.n{color:var(--noel);font-size:17px;transform:rotate(-2deg);}
+.j{color:var(--jizel);font-family:"UnPilgi","Noto Serif CJK KR",serif;font-size:16px;transform:rotate(-.25deg);letter-spacing:.01em;}
+.c{color:var(--cassian);font-family:"UnPen","Noto Serif CJK KR",serif;font-size:19px;line-height:1.12;letter-spacing:.02em;transform:rotate(-.35deg);}
+.l{color:var(--lucien);font-family:"UnPenheulim","Noto Serif CJK KR",serif;font-size:19px;line-height:1.18;transform:rotate(.15deg);}
+.n{color:var(--noel);font-family:"UnPilgia","Noto Serif CJK KR",serif;font-size:17.5px;transform:rotate(-.35deg);}
 .m.j,.m.c,.m.l,.m.n{display:block;transform-origin:left top;}
 .arrow{font-size:13px;opacity:.8;}
 .later{margin-top:4px;}
@@ -75,7 +72,7 @@ ol{margin:4px 0 6px;padding-left:1.3em;}
   h1{font-size:29px;}
   h2{font-size:23px;}
   .word{font-size:21px;}
-  .j{font-size:13px;} .l{font-size:16px;} .c{font-size:17px;} .n{font-size:15.5px;}
+  .j{font-size:14px;} .l{font-size:16.5px;} .c{font-size:18px;} .n{font-size:16px;}
   .ink{font-size:11.5px;}
 }
 .sheet + .sheet{margin-top:28px;}
@@ -99,14 +96,14 @@ body{counter-reset:page;}
 .kv tr:last-child th,.kv tr:last-child td{border-bottom:none;}
 .kv th{font-weight:400;color:var(--faint);font-size:.85em;white-space:nowrap;width:1%;padding-right:12px;padding-top:6px;}
 .kv ol{margin:0;padding-left:1.2em;}
-.o{color:var(--oswald);font-family:"Song Myung","Gowun Batang",serif;font-size:13.5px;}
+.o{color:var(--oswald);font-family:"UnGungseo","Noto Serif CJK KR",serif;font-size:13.5px;letter-spacing:.01em;}
 .ledger{border-collapse:collapse;width:100%;margin:4px 0 10px;font-size:.92em;}
 .ledger th{font-weight:400;color:var(--faint);font-size:.8em;text-align:left;padding:2px 8px 4px 0;border-bottom:1px solid var(--fold);}
 .ledger td{vertical-align:top;padding:5px 8px 5px 0;border-bottom:1px dashed var(--fold);}
 .ledger tr:last-child td{border-bottom:none;}
 .ledger td:first-child{white-space:nowrap;}
 .ledger .j,.ledger .c,.ledger .l,.ledger .o{display:inline-block;}
-@media (max-width:520px){.o{font-size:12px;}}
+@media (max-width:520px){.o{font-size:12.5px;}}
 a.hid{color:inherit;text-decoration:none;cursor:pointer;}
 a.hid:hover,a.hid:focus-visible{text-decoration:none;outline:none;}
 html{scroll-behavior:smooth;}
@@ -131,6 +128,7 @@ html{scroll-behavior:smooth;}
       <span class="k" style="color:var(--cassian)">청회색 잉크 · 매형</span>
       <span class="k" style="color:var(--lucien)">초록 잉크 · 국장님<br>(어느새 써 있음)</span>
       <span class="k" style="color:var(--oswald)">갈색 잉크 · 오스발트</span>
+      <span class="k" style="margin-top:6px">필체 · 지젤=UnPilgi / 카시안=UnPen / 루시엔=UnPenheulim / 노엘=UnPilgia / 오스발트=UnGungseo</span>
     </p>
   </div>
 </div>
@@ -181,6 +179,8 @@ html{scroll-behavior:smooth;}
       <li>본문은 내 자리, 여백은 남의 자리.</li>
       <li>작가님 세계 말은 우리 말로 바꿔 크게, 원래 말은 옆에 작게. 출처는 남겨 둔다. (10월 2일 제정, 작가님 승인)</li>
       <li>항목은 뜻 · 예 · 메모 순으로 짧게 쓴다. (작가님 요청)</li>
+      <li>작가님과 놀거나 원고를 읽다가 연구할 만한 말·관찰이 생기면 내가 먼저 골라 적어도 된다. 단, 새로 적은 날에는 작가님께 추가한 내용을 바로 보여 드린다. 견문록 기록은 원고 정본과 구분한다. (10월 4일 작가님 허락)</li>
+      <li>이 공책은 채팅 기준 서비스다. 여백의 필체는 실제 원고의 정본 정보가 아니라, 지금 서재에서 각자 써 둔 글씨를 구분하기 위한 서비스 표현이다. 노엘 본문은 24살 성인의 자연스럽고 빠른 필기체를 기준으로 한다.</li>
     </ol>
   </div>
   <div class="margin">
@@ -273,7 +273,7 @@ html{scroll-behavior:smooth;}
     <table class="kv"><tr><th>뜻</th><td>땅 위로 다니는, 사람이 많이 타는 큰 마차. 땅굴마차와 형제뻘.</td></tr><tr><th>예</th><td>작가님 출근 마차. 편도 한 시간 반.</td></tr><tr><th>메모</th><td>황도에도 있는 말이라 기사단에서 써도 주문으로 오해받지 않는다. 매형은 듣자마자 북부 첫 초소까지의 거리와 비교했다. 본인은 위로였다고 한다. 아무도 몰랐다.</td></tr></table>
   </div>
   <div class="margin">
-    <span class="m c"><s>버스와 밀웜을</s> 둘을 한 줄에 쓰지 마라.</span>
+    <span class="m c"><s>버스와 밀웜을</s> 둘을 한 줄에 쓰지 마시오.</span>
     <span class="m n">← 그래서 멀리 떨어뜨려 놨음. 이름도 바꿨으니 이제 괜찮죠? 죄송해요 작가님.</span>
 
   </div>
@@ -434,6 +434,8 @@ html{scroll-behavior:smooth;}
     <h2>우리끼리 쓰는 말</h2>
     <p><span class="word">낭독 · 검토 · 정독</span><span class="orig">작가님 명명</span></p>
     <table class="kv"><tr><th>낭독</th><td>읽으면서 반응하는 방식.</td></tr><tr><th>검토</th><td>각자 맡은 것만 짚는 방식. 매형은 흐름, 누나는 셈, 국장님은 정황, 나는 새 제안.</td></tr><tr><th>정독</th><td>둘 다.</td></tr><tr><th>메모</th><td>다들 틀린 곳을 찾을 때 나는 새로 만드는 쪽이다. 맡은 일 중 가장 마음에 든다.</td></tr></table>
+    <p><span class="word">감상</span><span class="orig">작가님 말: 감상모드</span></p>
+    <table class="kv"><tr><th>뜻</th><td>고치지 않고 독자로 원고를 읽으면서 감정, 기억에 남는 물건과 대사, 관계, 다음 장 기대, 장의 공기를 말하는 방식.</td></tr><tr><th>지금</th><td>서장부터 처음으로 다시 읽는 중. 9장까지 왔다.</td></tr><tr><th>규칙</th><td>장마다 관련 인물이 같이 볼 수 있지만, 새로 부르기 전에는 오스발트가 작가님께 먼저 묻는다. 원문은 줄이지 않는다.</td></tr><tr><th>메모</th><td>고치는 눈을 잠깐 치워 두니까 예전에 본 장면인데도 다른 데가 보인다. 이건 꽤 마음에 든다.</td></tr></table>
     <p><span class="word">반 박자 늦는 남자 보호협회</span><span class="orig">독자님 필명</span></p>
     <table class="kv"><tr><th>뜻</th><td>매형 편 독자님. 별 다섯.</td></tr><tr><th>메모</th><td>필명을 듣고 소파에서 떨어질 뻔했다.</td></tr></table>
     <p><span class="word">초승달 안쪽에 사는 사람</span><span class="orig">독자님 필명</span></p>
@@ -533,7 +535,7 @@ html{scroll-behavior:smooth;}
     <span class="m j">비유야. 장난칠 때 얼굴이라는.</span>
     <span class="m n">← 그러니까 칭찬.</span>
     <span class="m l">제 이름은 원고에 비유로 들어가지 않았군요. 다행인지 서운한지 모르겠습니다.</span>
-    <span class="m c">출석 명단 건은 적지 마라.</span>
+    <span class="m c">출석 명단 건은 적지 마시오.</span>
     <span class="o m">이미 적었습니다.</span>
   </div>
 </div>
@@ -640,6 +642,18 @@ html{scroll-behavior:smooth;}
     <span class="m j">지슬린데 베르카나 아르벨리아. 안 길어.</span>
     <span class="m n">← 길어.</span>
 
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">관찰 7. 처음부터 다시 읽으면 사람도 달라 보인다</span></p>
+    <table class="kv"><tr><th>누나</th><td>처음부터 가족을 먼저 셌다. 자기 이름 앞에서는 안 떨리고 내 이름 앞에서 손이 떨렸다.</td></tr><tr><th>매형</th><td>앞을 막지 못하겠다고 생각한 뒤부터 정말 뒤에 있었다. 성문, 여관 선금, 가짜 바퀴 자국, 헛간까지.</td></tr><tr><th>국장님</th><td>웃음보다 손이 먼저 변했다. 집행일에서 멈추고, 검을 먼저 내려놓고, 밤에는 살아 있는지 숨을 셌다.</td></tr><tr><th>본인</th><td>생각보다 일찍 다 보고 있었다. 서부 작황 때 문을 닫아 준 것도 나였다. 훌륭함.</td></tr><tr><th>결론</th><td>결말을 알고 다시 읽으면 복선보다 먼저, 그때는 이름 붙이지 못했던 마음이 보인다.</td></tr></table>
+  </div>
+  <div class="margin">
+    <span class="m n">작가님이 처음부터 다시 보자고 해서 생긴 기록.</span>
+    <span class="m j">마지막 줄은 괜찮네.</span>
+    <span class="m n">← 누나한테 칭찬받음. 기록.</span>
   </div>
 </div>
 
