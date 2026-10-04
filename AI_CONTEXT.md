@@ -113,6 +113,14 @@
     "service/README.md"
   ],
   "archive_policy": "Files under archive/ are historical snapshots. They use the same code schema but MUST NOT control current state.",
-  "compatibility_contract": "If an AI system discovers any one of AGENTS.md, GPT.md, CLAUDE.md, AI_WORKFLOW.md, ROUTER.md, CURRENT_STATE.md, or instructions/*, it must follow startup.required_order."
+  "compatibility_contract": "If an AI system discovers any one of AGENTS.md, GPT.md, CLAUDE.md, AI_WORKFLOW.md, ROUTER.md, CURRENT_STATE.md, or instructions/*, it must follow startup.required_order.",
+  "write_policy": {
+    "default_target": "main",
+    "direct_commit_required": true,
+    "applies_to_all_models": true,
+    "branch_or_pr_default": false,
+    "exception": "Only when the user explicitly requests a branch or PR.",
+    "prewrite_check": "Read current main before every write and reconcile concurrent changes."
+  }
 }
 ```
