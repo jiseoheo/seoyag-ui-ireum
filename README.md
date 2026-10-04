@@ -15,8 +15,7 @@ Claude Project를 주 작업장으로, ChatGPT를 교대 작업장으로 사용�
 | [meta/style.md](meta/style.md) | 공통 문체·출력·품질 기준 |
 | [service/](service/) | 완성형 놀이 콘텐츠 |
 | [playground/](playground/) | 미확정 아이디어·초안 |
-| [archive/](archive/) | 과거 기록·옛 지침 |
 | [manifest.json](manifest.json) | 경로·장 앵커 색인 |
-| [instructions/](instructions/) | 두 모델에 같은 진입점을 안내하는 호환 파일 |
+| [instructions/project-instructions.md](instructions/project-instructions.md) | Claude·ChatGPT 프로젝트 설정에 넣는 공통 시작 안내 |
 
 모델별 루트 지침과 옛 경로는 공통 진입점으로 연결됩니다.

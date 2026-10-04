@@ -144,13 +144,6 @@
   "playground": {
     "ideas": "playground/ideas.md"
   },
-  "archive": {
-    "worklog": "archive/worklog.html",
-    "gpt_writing_guide": "archive/gpt-writing-guide.md",
-    "author_notes": "archive/author-notes.md",
-    "legacy_continue_guide": "archive/structure-261003/docs/legacy-continue-guide.html",
-    "structure_cleanup": "archive/structure-261003/README.md"
-  },
   "ai_startup_order": [
     "START.md",
     "STATUS.md"
