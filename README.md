@@ -10,7 +10,8 @@ Claude Project를 주 작업장으로, ChatGPT를 교대 작업장으로 사용�
 | --- | --- |
 | [manuscript/chapters/](manuscript/chapters/) | 원고 정본 (장별 파일) |
 | [manuscript/current.html](manuscript/current.html) | 한 권짜리 최종본 (자동 생성) |
-| [canon/characters.md](canon/characters.md) | 확정 캐릭터·호칭·관계·인터뷰 사실 |
+| [canon/characters.md](canon/characters.md) | 기본 인물 설정 (상시 대화 배경, 호칭·말투, 상시 4인) |
+| [canon/characters-extra.md](canon/characters-extra.md) | 추가 인물 설정 (소환 인물, 생일·기념일, 인터뷰 사실) |
 | [canon/reader-reviews.md](canon/reader-reviews.md) | 인물들이 읽은 독자 후기 (보관) |
 | [canon/world.md](canon/world.md) | 확정 세계관 |
 | [meta/chapters.md](meta/chapters.md) | 전체 흐름 탐색 |

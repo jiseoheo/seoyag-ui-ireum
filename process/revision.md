@@ -4,7 +4,7 @@
 > 진행·파일 관리는 📒 오스발트가 맡는다.
 
 ## 읽을 자료
-`meta/style.md` → 대상 장과 직전·직후 `meta/chapters.md` 요약 → 대상 장의 `reviews/` 수정사항(있으면) → 대상 장 원문 전체(`manuscript/chapters/`의 해당 장 파일) → 관련 캐릭터.
+`meta/style.md` → 대상 장과 직전·직후 `meta/chapters.md` 요약 → 대상 장의 `reviews/` 수정사항(있으면) → 대상 장 원문 전체(`manuscript/chapters/`의 해당 장 파일) → 관련 캐릭터(`canon/characters.md`, 소환 인물은 `canon/characters-extra.md`).
 작업 대상 장과 단계는 이미 읽은 `STATUS.md`에서 고른다.
 
 ## 순서

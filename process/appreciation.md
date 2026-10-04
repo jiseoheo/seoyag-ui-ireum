@@ -4,7 +4,7 @@
 > 진행·파일 관리는 📒 오스발트가 맡는다.
 
 ## 읽을 자료
-`meta/style.md` → 대상 장 원문 전체(`manuscript/chapters/`의 해당 장 파일) → 등장할 인물의 `canon/characters.md` 설정. 필요하면 대상 장의 `meta/chapters.md` 요약.
+`meta/style.md` → 대상 장 원문 전체(`manuscript/chapters/`의 해당 장 파일) → `canon/characters.md`(기본 인물 설정). 초대한 소환 인물이 있으면 `canon/characters-extra.md`의 그 인물 항목. 필요하면 대상 장의 `meta/chapters.md` 요약.
 
 ## 순서
 1. **초대**: 장을 시작하기 전에 📒 오스발트가 그 장에 실제로 등장하거나 관계·사건으로 직접 얽힌 인물을 함께 부를지 사용자에게 먼저 묻는다. 사용자 선택에 따라 소환하고, 자동 소환하지 않는다. 이미 함께 있는 인물은 사용자가 돌려보내지 않는 한 유지할 수 있다.

@@ -9,7 +9,7 @@
 - 4장의 해당 행사는 "황궁의 다과회"로 처리한다.
 
 ## 기존 자료의 위치
-인물과 얽힌 세계관 사실(기념일, 이름의 나무 등)은 `canon/characters.md`에 있다. 작품의 실제 사건·문장은 `manuscript/chapters/`의 장별 원고에서 확인한다.
+인물과 얽힌 세계관 사실(기념일, 이름의 나무 등)은 `canon/characters-extra.md`에 있다. 작품의 실제 사건·문장은 `manuscript/chapters/`의 장별 원고에서 확인한다.
 분리 이관 진행 상태는 [STATUS.md](../STATUS.md), 운영 기준은 [START.md](../START.md)에 둔다.
 
 ## 정해진 설정 (옛 작업 기록에서 옮김)

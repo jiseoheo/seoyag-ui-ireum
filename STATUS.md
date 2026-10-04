@@ -44,6 +44,6 @@ STATE_VERSION: 2026-10-04-APPRECIATION-CH9-REVIEW-MAP-v15
 ## 보류·확인 필요
 - 2편 집필은 보류. 기존 구상과 후보는 `sequel/ideas.md`에 모여 있다.
 - 기존 기획 문서의 세드릭 칸("대출 장부의 혼인 서약까지") 정정은 보류 상태로 남긴다. 현재 파일 위치는 저장소에 확인되지 않으므로 문서를 임의 생성하지 않는다.
-- 옛 작업 기록의 "정해진 설정"은 원문 그대로 `canon/world.md`·`canon/characters.md`로 옮겼다. `canon/characters.md` 안에 섞여 있는 세계관 사실(기념일 등)의 `canon/world.md` 분리는 아직 미완료이며, 새 설정을 확정하거나 추정해서 옮기지 않는다.
+- 옛 작업 기록의 "정해진 설정"은 원문 그대로 `canon/world.md`·`canon/characters-extra.md`로 옮겼다. `canon/characters-extra.md` 안에 섞여 있는 세계관 사실(기념일 등)의 `canon/world.md` 분리는 아직 미완료이며, 새 설정을 확정하거나 추정해서 옮기지 않는다.
 - meta/chapters.md 6장 요약의 중요 장면 "처음에는 명이었소."는 원고와 다름(실제 카시안 대사는 "명이었소."). 21장 완료 처리 때 수정 여부 결정.
 - 노엘의 견문록 디자인·필체 확정 기준은 `service/README.md`에 있다.
