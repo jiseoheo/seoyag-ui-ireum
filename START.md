@@ -21,7 +21,8 @@ GPT로 교대하거나 세션을 닫기 전에는 현재 세션의 승인 결과
 저장소 접근이 실패하면 실패 사실을 알리고 확인되지 않은 최신 상태를 추측하지 않는다.
 
 ## 3. 현재 자료 구조
-- `manuscript/current.html` — 유일한 원고 정본
+- `manuscript/chapters/` — 원고 정본(장별 파일). 장 번호와 파일 이름은 `manifest.json`의 `chapters`에 있다. `_head.html`·`_tail.html`은 화면 꾸밈용이라 읽지 않는다.
+- `manuscript/current.html` — 장별 파일을 이어 붙인 한 권짜리 최종본. main에 저장되면 자동으로 다시 만들어지므로 직접 고치지 않는다.
 - `canon/characters.html` — 확정 캐릭터·관계·말투·지속 생활 설정
 - `canon/world.md` — 확정 세계관
 - `meta/chapters.md` — 전체 장편 지도. 정본이 아닌 탐색용 파생자료
@@ -36,7 +37,8 @@ GPT로 교대하거나 세션을 닫기 전에는 현재 세션의 승인 결과
 과거 파일명은 호환을 위한 안내 파일로만 남길 수 있다.
 
 ## 4. 정본 규칙
-- GitHub main의 `manuscript/current.html`이 현재 원고다.
+- GitHub main의 `manuscript/chapters/` 장별 파일이 현재 원고다. 원고를 읽을 때는 필요한 장 파일만 연다.
+- 원고 수정은 해당 장 파일에만 한다. `current.html`은 저장 후 자동으로 맞춰진다(`scripts/manuscript.py`, `.github/workflows/manuscript.yml`). 실수로 `current.html`만 고쳐도 장별 파일로 자동 반영되지만, 같은 저장에서 둘을 다르게 고치면 자동 점검이 실패로 표시된다.
 - 사용자가 확정한 지속 설정만 CANON으로 기록한다.
 - 즉흥 대화·농담·가정은 기본적으로 PLAYGROUND이며 자동 저장·정본화하지 않는다.
 - 원고 본문은 사용자 승인 후에만 수정한다.
@@ -98,7 +100,7 @@ WORK의 현재 위치는 `STATUS.md` 하나에서만 관리하고, 장별 수정
 - 기존 기본값이 있고 정본과 충돌하지 않으며 적용 범위가 명확하면 다시 확인하지 않고 그 기본값을 따른다. 정본 충돌, 적용 범위의 모호함, 결과가 달라지는 선택지는 기존대로 사용자에게 확인한다.
 - 활성 세션 중에는 승인된 수정과 보류 후보를 Artifact/대화 작업 상태에 누적할 수 있다. 승인 하나마다 GitHub write를 반복하지 않는다.
 - 체크포인트는 다음 때 만든다: 모델을 Claude↔GPT로 바꾸기 전, 세션 종료 전, 사용량이 거의 찼을 때, 사용자가 저장을 요청했을 때, 장을 완료했을 때.
-- 체크포인트에서는 승인된 원고를 `manuscript/current.html`, 확정 지속 설정을 `canon/*`, 다음 시작점과 장별 상태를 `STATUS.md`에, 장별 승인 결과·보류 후보를 `reviews/`에 반영한다. 장을 완료했다면 `meta/chapters.md`도 갱신한다.
+- 체크포인트에서는 승인된 원고를 `manuscript/chapters/`의 해당 장 파일, 확정 지속 설정을 `canon/*`, 다음 시작점과 장별 상태를 `STATUS.md`에, 장별 승인 결과·보류 후보를 `reviews/`에 반영한다. 장을 완료했다면 `meta/chapters.md`도 갱신한다.
 - 체크포인트는 가능한 한 한 번의 일관된 묶음으로 커밋한다. 다음 모델은 그 커밋만으로 이어갈 수 있어야 한다.
 - 평범한 잡담과 즉흥 대화는 기본적으로 저장하지 않는다.
 - 특별히 보존하고 싶은 완성형 놀이 결과만 `service/` 또는 `playground/`에 둔다.

@@ -3,7 +3,7 @@
 STATE_VERSION: 2026-10-04-APPRECIATION-CH9-REVIEW-MAP-v15
 
 > 현재 작업 위치와 미완료 작업의 유일한 기준.
-> 작품 사실의 정본은 아니며, 실제 문장은 `manuscript/current.html`에서 확인한다.
+> 작품 사실의 정본은 아니며, 실제 문장은 `manuscript/chapters/`의 해당 장 파일에서 확인한다.
 
 ## 현재 위치
 - 현재 사용자가 별도로 요청한 **처음부터 끝까지 감상모드** 진행 중.

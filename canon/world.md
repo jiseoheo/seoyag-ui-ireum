@@ -9,5 +9,5 @@
 - 4장의 해당 행사는 "황궁의 다과회"로 처리한다.
 
 ## 기존 자료의 위치
-기존 세계관 사실 중 인물 설정과 함께 남아 있는 정보는 `canon/characters.html`에 보존되어 있다. 작품의 실제 사건·문장은 `manuscript/current.html`에서 확인한다.
+기존 세계관 사실 중 인물 설정과 함께 남아 있는 정보는 `canon/characters.html`에 보존되어 있다. 작품의 실제 사건·문장은 `manuscript/chapters/`의 장별 원고에서 확인한다.
 분리 이관 진행 상태는 [STATUS.md](../STATUS.md), 운영 기준은 [START.md](../START.md)에 둔다.

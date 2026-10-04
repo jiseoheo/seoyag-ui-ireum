@@ -8,7 +8,8 @@ Claude Project를 주 작업장으로, ChatGPT를 교대 작업장으로 사용�
 
 | 경로 | 역할 |
 | --- | --- |
-| [manuscript/current.html](manuscript/current.html) | 원고 정본 |
+| [manuscript/chapters/](manuscript/chapters/) | 원고 정본 (장별 파일) |
+| [manuscript/current.html](manuscript/current.html) | 한 권짜리 최종본 (자동 생성) |
 | [canon/characters.html](canon/characters.html) | 확정 캐릭터 설정 및 기존 후보 표시 |
 | [canon/world.md](canon/world.md) | 확정 세계관 |
 | [meta/chapters.md](meta/chapters.md) | 전체 흐름 탐색 |
