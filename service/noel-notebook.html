@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>[서약의 이름으로] 노엘의 견문록</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Hi+Melody&family=Nanum+Pen+Script&display=block">
 <style>
 
 @font-face{font-family:"UnPilgi";src:url("https://mirrors.ibiblio.org/pub/mirrors/CTAN/fonts/unfonts-core/UnPilgi.ttf") format("truetype");font-style:normal;font-weight:400;font-display:block;}
@@ -43,9 +46,9 @@ html{scroll-behavior:smooth;background:var(--desk)}
 body{
   margin:0;
   color:var(--ink);
-  font-family:"UnPilgia","Noto Serif CJK KR","AppleMyungjo","Batang",serif;
-  font-size:18px;
-  line-height:1.42;
+  font-family:"Nanum Pen Script","UnPilgia","Noto Serif CJK KR","AppleMyungjo","Batang",serif;
+  font-size:25px;
+  line-height:1.02;
   background:
     radial-gradient(circle at 20% 0%,rgba(255,255,255,.08),transparent 26%),
     linear-gradient(90deg,rgba(255,255,255,.025),transparent 30%,rgba(0,0,0,.025)),
@@ -87,7 +90,7 @@ body{
 .row+.row{margin-top:12px}
 .row+.row .main,.row+.row .margin{padding-top:8px}
 h1{
-  font:400 38px/1.06 "UnPilgia","Noto Serif CJK KR","AppleMyungjo","Batang",serif;
+  font:400 52.5px/.77 "Nanum Pen Script","UnPilgia","Noto Serif CJK KR","AppleMyungjo","Batang",serif;
   margin:0 0 8px;
   transform:rotate(-.8deg);
   transform-origin:left;
@@ -107,7 +110,7 @@ h1{
   transform:rotate(-.4deg);
 }
 h2{
-  font:400 24px/1.15 "UnPilgia","Noto Serif CJK KR","AppleMyungjo","Batang",serif;
+  font:400 33px/.84 "Nanum Pen Script","UnPilgia","Noto Serif CJK KR","AppleMyungjo","Batang",serif;
   margin:20px 0 7px;
   padding:0 18px 3px 0;
   display:inline-block;
@@ -116,14 +119,14 @@ h2{
 }
 h2::after{content:"";position:absolute;left:0;right:-6px;bottom:-3px;height:1px;background:rgba(77,59,38,.18);transform:rotate(-.3deg)}
 p{margin:0 0 6px}
-.word{font-size:21px}
+.word{font-size:29px}
 s{text-decoration-thickness:1.25px;text-decoration-color:rgba(55,41,27,.62)}
-ol{margin:3px 0 7px;padding-left:1.3em}
+ol{margin:3px 0 7px;padding-left:.94em}
 .m{display:block;margin:2px 0 10px;line-height:1.34;background:none;padding:0;box-shadow:none}
-.j{color:var(--jizel);font-family:"UnPilgi","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:14.5px;transform:rotate(-.2deg)}
-.c{color:var(--cassian);font-family:"UnPen","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:17px;line-height:1.12;letter-spacing:.015em;transform:rotate(-.3deg)}
-.l{color:var(--lucien);font-family:"UnPenheulim","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:17px;line-height:1.18;transform:rotate(.12deg)}
-.n{color:var(--noel);font-family:"UnPilgia","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:15.5px;transform:rotate(-.22deg)}
+.j{color:var(--jizel);font-family:"Hi Melody","UnPilgi","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:19px;line-height:1.02;transform:rotate(-.2deg)}
+.c{color:var(--cassian);font-family:"East Sea Dokdo","UnPen","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:23px;line-height:.83;letter-spacing:.015em;transform:rotate(-.3deg)}
+.l{color:var(--lucien);font-family:"Nanum Pen Script","UnPenheulim","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:22.5px;line-height:.89;transform:rotate(.12deg)}
+.n{color:var(--noel);font-family:"Nanum Pen Script","UnPilgia","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:21.5px;line-height:.97;transform:rotate(-.22deg)}
 .o{color:var(--oswald);font-family:"UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:12.5px;letter-spacing:.005em}
 .m.j,.m.c,.m.l,.m.n{transform-origin:left top}
 .orig{font-size:11px;color:var(--faint);margin-left:5px;font-family:"UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif}
@@ -132,7 +135,7 @@ ol{margin:3px 0 7px;padding-left:1.3em}
 .ink .k{display:block}
 .todo{list-style:none;padding:0;margin:3px 0 0}
 .todo li{position:relative;padding-left:24px;margin:0 0 6px}
-.todo li::before{content:"□";position:absolute;left:2px;top:0;font-family:"UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;color:var(--faint)}
+.todo li::before{content:"□";position:absolute;left:2px;top:0;font-family:"UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;font-size:.72em;line-height:1.42;color:var(--faint)}
 .todo li.done::before{content:"☒"}
 .folio{position:absolute;bottom:16px;right:24px;font:13px/1.2 "UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;color:var(--faint)}
 .folio.left{right:auto;left:58px}
@@ -142,14 +145,14 @@ ol{margin:3px 0 7px;padding-left:1.3em}
 .toc{list-style:none;padding:0;margin:3px 0 0}
 .toc li{margin-bottom:3px}
 .toc a{border-bottom:1px dotted rgba(92,70,42,.24)}
-.date{font-size:.84em;color:var(--faint);margin-left:3px;font-family:"UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif}
+.date{font-size:.6em;color:var(--faint);margin-left:3px;font-family:"UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif}
 .kv{border-collapse:collapse;width:100%;margin:2px 0 12px;border-top:1px solid rgba(90,67,38,.25);border-bottom:1px solid rgba(90,67,38,.18)}
 .kv th,.kv td{vertical-align:top;padding:4px 5px 4px 0;border-bottom:1px dotted rgba(90,67,38,.19);text-align:left}
 .kv tr:last-child th,.kv tr:last-child td{border-bottom:none}
-.kv th{font:400 .82em/1.4 "UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;color:var(--faint);white-space:nowrap;width:1%;padding-right:11px}
-.kv ol{margin:0;padding-left:1.2em}
+.kv th{font:400 .59em/1.4 "UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;color:var(--faint);white-space:nowrap;width:1%;padding-right:11px}
+.kv ol{margin:0;padding-left:.86em}
 .ledger{border-collapse:collapse;width:100%;margin:4px 0 10px;font-size:.92em;border-top:1px solid rgba(84,63,37,.42);border-bottom:1px solid rgba(84,63,37,.30)}
-.ledger th{font:400 .78em/1.3 "UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;color:var(--faint);text-align:left;padding:3px 8px 4px 0;border-bottom:1px solid rgba(84,63,37,.30)}
+.ledger th{font:400 .56em/1.3 "UnGungseo","Noto Serif CJK KR","AppleMyungjo","Batang",serif;color:var(--faint);text-align:left;padding:3px 8px 4px 0;border-bottom:1px solid rgba(84,63,37,.30)}
 .ledger td{vertical-align:top;padding:5px 8px 5px 0;border-bottom:1px dotted rgba(84,63,37,.18)}
 .ledger tr:last-child td{border-bottom:none}
 .ledger td:first-child{white-space:nowrap}
@@ -168,14 +171,14 @@ a.hid{color:inherit;text-decoration:none;cursor:pointer}
 }
 .sheet#p4::marker{display:none}
 @media(max-width:520px){
-  body{font-size:16px}
+  body{font-size:22px;line-height:1.03}
   .sheet{width:auto;margin:0;padding:34px 12px 42px 44px;box-shadow:none;border-left:0;border-right:0}
   .sheet::before{width:24px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='34' viewBox='0 0 24 34'%3E%3Cpath d='M8 11 L16 18 M16 11 L8 18' stroke='%237d6548' stroke-width='1.1' stroke-linecap='round' opacity='.8'/%3E%3C/svg%3E") center top/24px 34px repeat-y,linear-gradient(90deg,rgba(88,62,39,.34),rgba(185,158,112,.42) 48%,rgba(255,255,255,.08) 52%,rgba(85,61,38,.16));}
   .sheet{background:linear-gradient(90deg,transparent 0 31px,var(--margin-red) 31px 32px,transparent 32px),repeating-linear-gradient(180deg,transparent 0 28px,var(--rule) 28px 29px),repeating-linear-gradient(90deg,transparent 0 75px,var(--chain) 75px 76px),radial-gradient(ellipse at 55% 35%,rgba(255,255,255,.34),transparent 56%),linear-gradient(180deg,var(--paper),var(--paper2))}
   .row{grid-template-columns:minmax(0,1fr) 36%}
   .main{padding-right:10px}.margin{padding-left:9px}
-  h1{font-size:27px}.byline{font-size:14px}h2{font-size:20px}.word{font-size:18.5px}
-  .j{font-size:12.5px}.l{font-size:14.5px}.c{font-size:15.5px}.n{font-size:13.5px}.o{font-size:11px}.orig{font-size:9.5px}.ink{font-size:10px}
+  h1{font-size:37.5px}.byline{font-size:19.5px}h2{font-size:27.5px}.word{font-size:25.5px}
+  .j{font-size:16.5px}.l{font-size:19px}.c{font-size:21px}.n{font-size:18.5px}.o{font-size:11px}.orig{font-size:9.5px}.ink{font-size:10px}
   .sheet#p1 > .row:first-of-type .main::after{right:38%;top:12px;width:42px;height:42px;font-size:11px}
 }
 </style>
@@ -197,7 +200,7 @@ a.hid{color:inherit;text-decoration:none;cursor:pointer}
       <span class="k" style="color:var(--cassian)">청회색 잉크 · 매형</span>
       <span class="k" style="color:var(--lucien)">초록 잉크 · 국장님<br>(어느새 써 있음)</span>
       <span class="k" style="color:var(--oswald)">갈색 잉크 · 오스발트</span>
-      <span class="k" style="margin-top:5px">필체 · 지젤=UnPilgi / 카시안=UnPen / 루시엔=UnPenheulim / 노엘=UnPilgia / 오스발트=UnGungseo</span>
+      <span class="k" style="margin-top:5px">필체 · 지젤=Hi Melody / 카시안=East Sea Dokdo / 루시엔=Nanum Pen Script / 노엘=Nanum Pen Script / 오스발트=UnGungseo</span>
     </p>
   </div>
 </div>
@@ -614,7 +617,7 @@ a.hid{color:inherit;text-decoration:none;cursor:pointer}
     <h2>확인할 것</h2>
     <ul class="todo">
       <li class="done">사랑 앞에서만 고장 나는 사람을 이르는 말 → 삐걱이.</li>
-      <li class="done">작가님 세계 개구리 먹이(밀기울벌레 외) → 작가님이 직접 찾아 주셨다. 귀뚜라미가 가장 흔하고, 밀기울벌레<small style="font-size:13.5px;color:var(--faint)">(밀웜)</small>와 지렁이도 쓴다. 작은 개구리는 초파리. 모두 우리 세계에도 있어 바꿔 부를 필요 없음. 귀뚜라미는 잡다가 내가 먼저 지친다.</li>
+      <li class="done">작가님 세계 개구리 먹이(밀기울벌레 외) → 작가님이 직접 찾아 주셨다. 귀뚜라미가 가장 흔하고, 밀기울벌레<small style="font-size:18.5px;color:var(--faint)">(밀웜)</small>와 지렁이도 쓴다. 작은 개구리는 초파리. 모두 우리 세계에도 있어 바꿔 부를 필요 없음. 귀뚜라미는 잡다가 내가 먼저 지친다.</li>
       <li><s>약방 딸 이름</s> (지움. 적지 않은 것으로 한다.)</li>
       <li>매형이 혼례 서약서에 '대공' 대신 쓴 서명. 매형도 작가님도 비밀이라 한다. 미리 맞춘 것 같다.</li>
       <li>작가님 세계에서 책을 빌리는 방법과 연체료 유무. → 세드릭 전하께 보고.</li>
@@ -723,6 +726,16 @@ a.hid{color:inherit;text-decoration:none;cursor:pointer}
     <span class="m n">작가님이 처음부터 다시 보자고 해서 생긴 기록.</span>
     <span class="m j">마지막 줄은 괜찮네.</span>
     <span class="m n">← 누나한테 칭찬받음. 기록.</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <p><span class="word">관찰 8. 네 글자 셈법</span><span class="orig">ISTJ</span></p>
+    <table class="kv"><tr><th>뜻</th><td>작가님 세계에서는 사람을 이름보다 먼저 네 글자로 센다. 매형은 ISTJ래요. 뜻을 한 마디로 줄이면 '진국'.</td></tr><tr><th>증거</th><td>첫 편지 열여섯 자에 정보만 셋("북부는 평온하오. 눈이 많소. 몸조심하시오."). 별일 없이 찾아온 게 열한 번(누나 셈). 평생 안 쓰던 물음표를 20장 편지에서 두 번.</td></tr><tr><th>매형 반응</th><td>"……그것도 지우게." — 안 지움. 견문록은 제 거니까요.</td></tr></table>
+  </div>
+  <div class="margin">
+
   </div>
 </div>
 
