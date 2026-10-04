@@ -13,6 +13,8 @@ Claude Project를 주 작업장으로, ChatGPT를 교대 작업장으로 사용�
 | [canon/world.md](canon/world.md) | 확정 세계관 |
 | [meta/chapters.md](meta/chapters.md) | 전체 흐름 탐색 |
 | [meta/style.md](meta/style.md) | 공통 문체·출력·품질 기준 |
+| [STATUS.md](STATUS.md) | 현재 작업 위치 |
+| [reviews/](reviews/) | 장별 검토 메모 (해당 장 작업 때만 읽음) |
 | [service/](service/) | 완성형 놀이 콘텐츠 |
 | [playground/](playground/) | 미확정 아이디어·초안 |
 | [manifest.json](manifest.json) | 경로·장 앵커 색인 |
