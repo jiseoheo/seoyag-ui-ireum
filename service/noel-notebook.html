@@ -6,7 +6,7 @@
 <title>[서약의 이름으로] 노엘의 견문록</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Hi+Melody&family=East+Sea+Dokdo&family=Nanum+Brush+Script&family=Gowun+Batang&family=Song+Myung&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Gaegu:wght@300;400;700&family=Gamja+Flower&family=Nanum+Brush+Script&family=Nanum+Pen+Script&family=Gowun+Batang&display=swap" rel="stylesheet">
 <style>
 :root{
   --desk:#C9C2B3; --paper:#ECE5D5; --paper-edge:#D9CFB9; --chain:rgba(120,98,60,.07); --fold:rgba(110,85,50,.28);
@@ -26,7 +26,7 @@
 html{scroll-padding-top:env(safe-area-inset-top,0px);}
 *,*::before,*::after{box-sizing:inherit;}
 body{margin:0;background:var(--desk);color:var(--noel);
-  font-family:"Nanum Pen Script","Gowun Batang",cursive,serif;font-size:20.5px;line-height:1.4;}
+  font-family:"Gaegu","Nanum Pen Script","Gowun Batang",cursive,serif;font-size:20.5px;line-height:1.4;}
 .sheet{
   max-width:720px;margin:24px auto 48px;position:relative;
   background:
@@ -49,10 +49,10 @@ s{text-decoration-thickness:1.5px;}
 ol{margin:4px 0 6px;padding-left:1.3em;}
 /* margin hands */
 .m{display:block;margin:2px 0 10px;line-height:1.35;}
-.j{color:var(--jizel);font-family:"Hi Melody","Gowun Batang",cursive,serif;font-size:15.5px;transform:rotate(-.8deg);letter-spacing:.01em;}
-.c{color:var(--cassian);font-family:"East Sea Dokdo","Gowun Batang",cursive,serif;font-size:19.5px;line-height:1.15;letter-spacing:.03em;transform:rotate(-1.5deg);}
-.l{color:var(--lucien);font-family:"Nanum Brush Script","Gowun Batang",cursive,serif;font-size:18.5px;line-height:1.2;transform:skewX(-9deg);}
-.n{color:var(--noel);font-size:17px;transform:rotate(-2deg);}
+.j{color:var(--jizel);font-family:"Gamja Flower","Nanum Pen Script","Gowun Batang",cursive,serif;font-size:16px;transform:rotate(-.35deg);letter-spacing:.015em;}
+.c{color:var(--cassian);font-family:"East Sea Dokdo","Nanum Brush Script","Gowun Batang",cursive,serif;font-size:21px;line-height:1.08;letter-spacing:.025em;transform:rotate(-.8deg);}
+.l{color:var(--lucien);font-family:"Nanum Brush Script","Gamja Flower","Gowun Batang",cursive,serif;font-size:19px;line-height:1.18;transform:skewX(-5deg) rotate(.25deg);}
+.n{color:var(--noel);font-family:"Gaegu","Nanum Pen Script","Gowun Batang",cursive,serif;font-size:17.5px;transform:rotate(-1.5deg);}
 .m.j,.m.c,.m.l,.m.n{display:block;transform-origin:left top;}
 .arrow{font-size:13px;opacity:.8;}
 .later{margin-top:4px;}
@@ -75,7 +75,7 @@ ol{margin:4px 0 6px;padding-left:1.3em;}
   h1{font-size:29px;}
   h2{font-size:23px;}
   .word{font-size:21px;}
-  .j{font-size:13px;} .l{font-size:16px;} .c{font-size:17px;} .n{font-size:15.5px;}
+  .j{font-size:14px;} .l{font-size:16.5px;} .c{font-size:18px;} .n{font-size:16px;}
   .ink{font-size:11.5px;}
 }
 .sheet + .sheet{margin-top:28px;}
@@ -99,14 +99,14 @@ body{counter-reset:page;}
 .kv tr:last-child th,.kv tr:last-child td{border-bottom:none;}
 .kv th{font-weight:400;color:var(--faint);font-size:.85em;white-space:nowrap;width:1%;padding-right:12px;padding-top:6px;}
 .kv ol{margin:0;padding-left:1.2em;}
-.o{color:var(--oswald);font-family:"Song Myung","Gowun Batang",serif;font-size:13.5px;}
+.o{color:var(--oswald);font-family:"Nanum Pen Script","Gamja Flower","Gowun Batang",cursive,serif;font-size:14px;letter-spacing:.01em;}
 .ledger{border-collapse:collapse;width:100%;margin:4px 0 10px;font-size:.92em;}
 .ledger th{font-weight:400;color:var(--faint);font-size:.8em;text-align:left;padding:2px 8px 4px 0;border-bottom:1px solid var(--fold);}
 .ledger td{vertical-align:top;padding:5px 8px 5px 0;border-bottom:1px dashed var(--fold);}
 .ledger tr:last-child td{border-bottom:none;}
 .ledger td:first-child{white-space:nowrap;}
 .ledger .j,.ledger .c,.ledger .l,.ledger .o{display:inline-block;}
-@media (max-width:520px){.o{font-size:12px;}}
+@media (max-width:520px){.o{font-size:12.5px;}}
 a.hid{color:inherit;text-decoration:none;cursor:pointer;}
 a.hid:hover,a.hid:focus-visible{text-decoration:none;outline:none;}
 html{scroll-behavior:smooth;}
@@ -131,6 +131,7 @@ html{scroll-behavior:smooth;}
       <span class="k" style="color:var(--cassian)">청회색 잉크 · 매형</span>
       <span class="k" style="color:var(--lucien)">초록 잉크 · 국장님<br>(어느새 써 있음)</span>
       <span class="k" style="color:var(--oswald)">갈색 잉크 · 오스발트</span>
+      <span class="k" style="margin-top:6px">필체 · 지젤=Gamja Flower / 카시안=East Sea Dokdo / 루시엔=Nanum Brush Script / 노엘=Gaegu / 오스발트=Nanum Pen Script</span>
     </p>
   </div>
 </div>
@@ -182,6 +183,7 @@ html{scroll-behavior:smooth;}
       <li>작가님 세계 말은 우리 말로 바꿔 크게, 원래 말은 옆에 작게. 출처는 남겨 둔다. (10월 2일 제정, 작가님 승인)</li>
       <li>항목은 뜻 · 예 · 메모 순으로 짧게 쓴다. (작가님 요청)</li>
       <li>작가님과 놀거나 원고를 읽다가 연구할 만한 말·관찰이 생기면 내가 먼저 골라 적어도 된다. 단, 새로 적은 날에는 작가님께 추가한 내용을 바로 보여 드린다. 견문록 기록은 원고 정본과 구분한다. (10월 4일 작가님 허락)</li>
+      <li>이 공책은 채팅 기준 서비스다. 여백의 필체는 실제 원고의 정본 정보가 아니라, 지금 서재에서 각자 써 둔 글씨를 구분하기 위한 서비스 표현이다.</li>
     </ol>
   </div>
   <div class="margin">
