@@ -151,10 +151,7 @@
     "legacy_continue_guide": "archive/structure-261003/docs/legacy-continue-guide.html",
     "structure_cleanup": "archive/structure-261003/README.md"
   },
-  "ai_context": "AI_CONTEXT.md",
-  "md_code_schema": "seoyag.mdcode.v1",
   "ai_startup_order": [
-    "AI_CONTEXT.md",
     "START.md",
     "STATUS.md"
   ]
