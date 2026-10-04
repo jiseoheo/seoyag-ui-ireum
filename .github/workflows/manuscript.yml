@@ -2,6 +2,7 @@
 # - 장별 파일만 바뀌었으면 current.html을 다시 만든다.
 # - current.html만 바뀌었으면 장별 파일을 다시 나눈다.
 # - 둘 다 바뀌었는데 서로 다르면 실패로 표시한다(사람이 확인).
+# LINKS.md(웹으로 읽는 AI용 파일 주소 목록)도 다시 만든다.
 # 이어서 저장소 전체 정합성(scripts/check.py: 원고·manifest·문서 링크)을 점검한다.
 name: manuscript-sync
 
@@ -39,14 +40,15 @@ jobs:
           elif [ "$book" -gt 0 ] && [ "$parts" -eq 0 ]; then
             python3 scripts/manuscript.py split
           fi
+          python3 scripts/links.py
 
       - name: Commit synced files
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "manuscript-sync"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add manuscript
-            git commit -m "Sync manuscript chapters and current.html"
+            git add manuscript LINKS.md
+            git commit -m "Sync manuscript and LINKS.md"
             git push
           fi
 

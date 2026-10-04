@@ -19,6 +19,7 @@ Claude Project를 주 작업장으로, ChatGPT를 교대 작업장으로 사용�
 | [reviews/](reviews/) | 장별 수정사항 (해당 장 작업 때만 읽음) |
 | [process/](process/) | 수다·퇴고·감상 프로세스와 2편 노트 카드 |
 | [sequel/ideas.md](sequel/ideas.md) | 2편 후보 목록 |
+| [LINKS.md](LINKS.md) | 웹으로 읽는 AI용 파일 주소 목록 (자동 생성) |
 | [scripts/](scripts/) | 원고 자동 맞춤·정합성 점검 (main 저장 시 자동 실행) |
 | [service/](service/) | 완성형 놀이 콘텐츠 |
 | [playground/](playground/) | 미확정 아이디어·초안 |
