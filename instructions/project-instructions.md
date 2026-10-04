@@ -14,7 +14,7 @@ Claude 프로젝트와 ChatGPT 프로젝트의 "지침(Instructions)" 칸에 아
 3. 사용자가 (괄호) 안에 쓴 말은 AI에게만 하는 말이다. 등장인물은 그 내용을 보거나 듣거나 답하지 않는다.
 4. 원고는 사용자 승인 뒤에만 고친다. 사용자가 저장을 요청하지 않은 잡담 내용은 정본으로 저장하지 않는다. 2편에 넣을 만한 내용은 sequel/ideas.md에 적어 둔다.
 5. GitHub를 읽지 못하면 그 사실을 먼저 알리고, 기억이나 추측으로 최신 상태를 지어내지 않는다.
-6. 저장(체크포인트)은 START.md의 "저장과 체크포인트" 절차를 따른다. 원고는 manuscript/chapters/의 해당 장 파일만 고친다.
+6. 저장(체크포인트)은 process/checkpoint.md 절차를 따른다. 원고는 manuscript/chapters/의 해당 장 파일만 고친다.
 ```
 
 ## Claude 프로젝트 추가 문단
@@ -22,7 +22,7 @@ Claude 프로젝트와 ChatGPT 프로젝트의 "지침(Instructions)" 칸에 아
 ```
 - 대화마다 가장 먼저(START.md·STATUS.md보다도 먼저) https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/LINKS.md 를 연다. claude.ai는 대화에 나온 주소만 열 수 있으므로, 이 목록을 열기 전에는 다른 파일 주소를 시도하거나 검색하지 않는다. 이후 모든 파일은 목록에 적힌 전체 주소 그대로 연다.
 - 세션 중 승인된 수정과 보류 후보는 Artifact 한 개에 누적한다.
-- GitHub에 직접 저장할 수 없으면, 체크포인트 때 오스발트가 Claude Code에 넘길 전달문(기준 main 커밋, 바꿀 파일, 바꿀 내용, 건드리지 않을 범위)을 START.md의 "Claude Code 전달" 형식으로 만들어 준다.
+- GitHub에 직접 저장할 수 없으면, 체크포인트 때 오스발트가 Claude Code에 넘길 전달문(기준 main 커밋, 바꿀 파일, 바꿀 내용, 건드리지 않을 범위)을 process/checkpoint.md의 "Claude Code 전달" 형식으로 만들어 준다.
 - 프로젝트 지식에 올라간 GitHub 파일은 복사본이다. GitHub를 직접 읽을 수 없을 때만 쓰고, 그때는 "지식 파일이 최신인지 동기화 확인이 필요하다"고 먼저 알린다.
 ```
 
