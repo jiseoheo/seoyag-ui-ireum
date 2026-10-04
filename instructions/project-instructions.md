@@ -20,6 +20,7 @@ Claude 프로젝트와 ChatGPT 프로젝트의 "지침(Instructions)" 칸에 아
 ## Claude 프로젝트 추가 문단
 
 ```
+- GitHub 파일은 https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/ 뒤에 경로를 붙인 주소로 읽는다(예: .../main/process/chat.md). github.com 화면 주소보다 가볍다.
 - 세션 중 승인된 수정과 보류 후보는 Artifact 한 개에 누적한다.
 - GitHub에 직접 저장할 수 없으면, 체크포인트 때 오스발트가 Claude Code에 넘길 전달문(기준 main 커밋, 바꿀 파일, 바꿀 내용, 건드리지 않을 범위)을 START.md의 "Claude Code 전달" 형식으로 만들어 준다.
 - 프로젝트 지식에 올라간 GitHub 파일은 복사본이다. GitHub를 직접 읽을 수 없을 때만 쓰고, 그때는 "지식 파일이 최신인지 동기화 확인이 필요하다"고 먼저 알린다.
