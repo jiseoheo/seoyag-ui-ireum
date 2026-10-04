@@ -2,7 +2,7 @@
   "project": "서약의 이름으로",
   "canonical": {
     "manuscript": "manuscript/chapters/",
-    "characters": "canon/characters.html",
+    "characters": "canon/characters.md",
     "world": "canon/world.md",
     "manuscript_book": "manuscript/current.html"
   },

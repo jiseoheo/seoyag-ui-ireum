@@ -10,7 +10,8 @@ Claude Project를 주 작업장으로, ChatGPT를 교대 작업장으로 사용�
 | --- | --- |
 | [manuscript/chapters/](manuscript/chapters/) | 원고 정본 (장별 파일) |
 | [manuscript/current.html](manuscript/current.html) | 한 권짜리 최종본 (자동 생성) |
-| [canon/characters.html](canon/characters.html) | 확정 캐릭터 설정 및 기존 후보 표시 |
+| [canon/characters.md](canon/characters.md) | 확정 캐릭터·호칭·관계·인터뷰 사실 |
+| [canon/reader-reviews.md](canon/reader-reviews.md) | 인물들이 읽은 독자 후기 (보관) |
 | [canon/world.md](canon/world.md) | 확정 세계관 |
 | [meta/chapters.md](meta/chapters.md) | 전체 흐름 탐색 |
 | [meta/style.md](meta/style.md) | 공통 문체·출력·품질 기준 |
@@ -18,6 +19,7 @@ Claude Project를 주 작업장으로, ChatGPT를 교대 작업장으로 사용�
 | [reviews/](reviews/) | 장별 수정사항 (해당 장 작업 때만 읽음) |
 | [process/](process/) | 수다·수정·감상·2편 후보 프로세스 카드 |
 | [sequel/ideas.md](sequel/ideas.md) | 2편 후보 목록 |
+| [scripts/](scripts/) | 원고 자동 맞춤·정합성 점검 (main 저장 시 자동 실행) |
 | [service/](service/) | 완성형 놀이 콘텐츠 |
 | [playground/](playground/) | 미확정 아이디어·초안 |
 | [manifest.json](manifest.json) | 경로·장 앵커 색인 |

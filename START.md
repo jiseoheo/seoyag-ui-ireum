@@ -23,14 +23,16 @@ GPT로 교대하거나 세션을 닫기 전에는 현재 세션의 승인 결과
 ## 3. 현재 자료 구조
 - `manuscript/chapters/` — 원고 정본(장별 파일). 장 번호와 파일 이름은 `manifest.json`의 `chapters`에 있다. `_head.html`·`_tail.html`은 화면 꾸밈용이라 읽지 않는다.
 - `manuscript/current.html` — 장별 파일을 이어 붙인 한 권짜리 최종본. main에 저장되면 자동으로 다시 만들어지므로 직접 고치지 않는다.
-- `canon/characters.html` — 확정 캐릭터·관계·말투·지속 생활 설정
+- `canon/characters.md` — 확정 캐릭터·관계·말투·지속 생활 설정
 - `canon/world.md` — 확정 세계관
+- `canon/reader-reviews.md` — 인물들이 읽은 독자 후기 원문 (필요할 때만)
 - `meta/chapters.md` — 전체 장편 지도. 정본이 아닌 탐색용 파생자료
 - `meta/style.md` — 문체·캐릭터 출력 기준
 - `STATUS.md` — 현재 작업 위치와 미완료 작업의 유일한 상태 파일
 - `reviews/` — 장별 수정사항(승인 결과·보류 후보·검토모드 결과). 해당 장 작업 때만 읽음
 - `process/` — 수다·수정·감상·2편 후보 프로세스 카드. 해당 요청 때만 읽음
 - `sequel/ideas.md` — 2편 후보 단일 목록. 정본 아님
+- `scripts/`, `.github/` — 원고 자동 맞춤과 정합성 점검 장치. main에 저장할 때마다 자동으로 돈다. 작업 중에는 읽지 않는다
 - `service/` — 완성된 놀이형/소품형 서비스 페이지
 - `playground/` — 미확정 아이디어나 선택적으로 보관하는 놀이
 
@@ -67,7 +69,7 @@ GPT로 교대하거나 세션을 닫기 전에는 현재 세션의 승인 결과
 | 2편 얘기, 2편에 넣고 싶은 내용 (모든 프로세스 공통) | [process/sequel.md](process/sequel.md) |
 
 ### 설정 조회
-인물은 `canon/characters.html`, 세계는 `canon/world.md`를 먼저 본다.
+인물은 `canon/characters.md`, 세계는 `canon/world.md`를 먼저 본다.
 원고 사실이 필요할 때만 관련 장을 확인한다.
 
 ### 전체 흐름 개정
