@@ -22,6 +22,7 @@ Git history를 기준으로 실제 과거 버전을 찾는다. 기억으로 재�
 
 ## 원고 장치
 - 원고 수정은 해당 장 파일에만 한다. `current.html`은 저장 후 자동으로 맞춰진다(`scripts/manuscript.py`, `.github/workflows/manuscript.yml`). 실수로 `current.html`만 고쳐도 장별 파일로 자동 반영되지만, 같은 저장에서 둘을 다르게 고치면 자동 점검이 실패로 표시된다.
+- 삽화 그림은 `manuscript/images/`에 파일로 두고, 원고에는 `<img src="images/파일이름">`처럼 경로만 적는다(경로는 `current.html` 기준). 그림을 data URI로 원고에 넣으면 Claude Project 지식 용량을 넘으므로 넣지 않는다. 전달 묶음이 data URI 조각이면 Claude Code가 그림을 파일로 꺼내 넣는다. 프로젝트 지식에는 `manuscript/images/`를 넣지 않는다(그림 속 글자는 `alt`에 있다).
 - `scripts/`, `.github/` — 원고 자동 맞춤과 정합성 점검 장치. main에 저장할 때마다 자동으로 돈다. 작업 중에는 읽지 않는다.
 
 ## 문서 역할과 호환

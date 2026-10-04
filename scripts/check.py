@@ -3,6 +3,7 @@
 
   - 장별 원고와 manuscript/current.html이 같은지
   - manifest.json이 가리키는 파일이 모두 있는지
+  - 원고의 삽화가 data URI가 아닌 manuscript/images/ 파일을 가리키고, 그 파일이 있는지
   - .md 문서 안의 상대 경로 링크와 `경로` 표기가 실제 파일을 가리키는지
 """
 import glob
@@ -25,6 +26,20 @@ def check_manuscript():
                        capture_output=True, text=True)
     if r.returncode:
         problems.append("원고: " + (r.stderr or r.stdout).strip())
+
+
+
+def check_images():
+    with open(os.path.join(ROOT, "manifest.json"), encoding="utf-8") as f:
+        files = [c["file"] for c in json.load(f)["chapters"]]
+    for rel in files:
+        with open(os.path.join(ROOT, rel), encoding="utf-8") as f:
+            text = f.read()
+        if re.search(r'<img[^>]*src="data:', text):
+            problems.append("%s: 삽화가 data URI로 들어 있음(manuscript/images/로 옮길 것)" % rel)
+        for src in re.findall(r'<img[^>]*src="([^"]+)"', text):
+            if not src.startswith("data:") and not exists(os.path.join("manuscript", src)):
+                problems.append("%s: 없는 삽화 %s" % (rel, src))
 
 
 def check_manifest():
@@ -58,6 +73,7 @@ def check_links():
 
 
 check_manuscript()
+check_images()
 check_manifest()
 check_links()
 if problems:
