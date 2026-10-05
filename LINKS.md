@@ -32,6 +32,8 @@
 
 ## 장별 수정사항 (reviews)
 
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/reviews/ch14.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/reviews/ch16.md
 - https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/reviews/ch18-20.md
 - https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/reviews/ch21.md
 - https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/reviews/ch22.md
