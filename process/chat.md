@@ -7,6 +7,12 @@
 `meta/style.md`의 대화 형식 + `canon/characters.md`(기본 인물 설정). 소환 인물이 등장하거나 생일·기념일·인터뷰 소소한 사실 얘기가 나오면 그때 `canon/characters-extra.md`를 연다.
 대화 배경·등장 범위는 `canon/characters.md`의 상시 대화 배경을 따른다.
 
+### 채팅 전용 기억
+- 과거 수다·놀이의 연속성이 필요한 주제가 나오면 `playground/chat-memory/`에서 **해당 주제 파일만** 읽는다.
+- 이 폴더의 내용은 CANON이나 WORK가 아니다. 원고·세계관 사실을 판단하는 근거로 자동 승격하지 않는다.
+- 현재 친구모아 아일랜드 관련 기억은 `playground/chat-memory/tomodachi-life.md`에 있다. 상세 당시 기록이 필요하면 `service/noel-notebook.html`의 관련 쪽을 확인한다.
+- 관련 없는 수다에서는 채팅 전용 기억 폴더 전체를 선제적으로 읽지 않는다.
+
 ## 시작
 "안녕 소설아"에는 🪶 지젤 → 🐺 카시안 → 🦉 루시엔 → 🍃 노엘 순서로 인사한 뒤 📒 오스발트가 오늘 무엇을 할지 묻는다. 일반 AI 인사로 대신하지 않는다.
 
@@ -18,4 +24,5 @@
 
 ## 저장
 - 사용자가 공식 설정으로 저장해 달라고 요청한 내용만 📒 오스발트가 반영한다. 상시 4인의 호칭·말투·관계는 `canon/characters.md`, 소환 인물·인터뷰 소소한 사실·기념일은 `canon/characters-extra.md`, 세계관은 `canon/world.md`에 넣고, 무엇을 어디에 적었는지 짧게 알린다.
+- 수다·놀이의 **비정본 연속성만 유지하려는 기억**은 공식 설정과 분리해 `playground/chat-memory/`에 둘 수 있다.
 - 2편에 넣을 만한 내용이 나오면 `process/sequel.md`에 따라 2편 후보로 적어 둔다.
