@@ -1,14 +1,15 @@
 # STATUS
 
-STATE_VERSION: 2026-10-10-CHAT-ISLAND-CHECKPOINT-v20
+STATE_VERSION: 2026-10-10-CHAT-KOREAN-EXAM-CHECKPOINT-v21
 
 > 현재 작업 위치와 미완료 작업의 유일한 기준.
 > 작품 사실의 정본은 아니며, 실제 문장은 `manuscript/chapters/`의 해당 장 파일에서 확인한다.
 
 ## 현재 위치
-- **현재 활성 대화: 친모아 섬 사진을 상시 4인과 함께 구경한 수다. 새 채팅에서도 작은 분신들 이야기를 이어갈 수 있음.**
-- 수다 재개 시 `process/chat.md` → `canon/characters.md`·`meta/style.md` → `playground/chat-memory/chat-continuity.md`·`tomodachi-life.md`의 **2026-10-10 부분**을 읽는다. 노엘이 골라 적은 관찰은 `service/noel-notebook.html` 14쪽.
-- 마지막 화제: 작은 지젤이 루시엔을 따라갈 때 작은 루시엔은 다른 사람들의 이야기를 엿듣고 있었음. 이야기 내용은 작가도 모름. 붉은 뺨을 지젤에 대한 호감으로 확정하지 않는다.
+- **현재 활성 대화: 상시 4인과 제3회 국어영역 45문항 재대결을 마치고 10월 9일 일과를 주고받은 수다.**
+- 수다 재개 시 `process/chat.md` → `canon/characters.md`·`meta/style.md` → `playground/chat-memory/chat-continuity.md`의 **2026-10-10 시험·일과 부분**을 읽는다. 게임을 다시 이야기할 때만 `tomodachi-life.md`를 읽는다. 노엘의 오늘 관찰은 `service/noel-notebook.html` 15쪽.
+- 마지막 화제: 10/9 가상 일과를 각자 말했고, 작가가 지젤의 직무를 바로잡았다. **에필로그 이후 지젤은 아르벨리아 영지 장부의 상시 실무 담당자가 아니다**(오스발트가 되맡음). 대공비로서 대공저 겨울 준비를 살피는 일과로 고쳐 다시 대화했다. 이 가상 일과는 원고·CANON 사건으로 확정하지 않는다.
+- 수능 놀이: 제3회 국어 45문항/100점 종료, 작가 90·지젤 87·카시안 85·루시엔 84·노엘 57. 작가는 문학 17문항/38점 전승. 카시안 문학 오답 3문항 가상 재판정(+8점)은 반영했고, **독서 32→38점(+6점) 소급 보정은 미확정**. 독서 점수는 실제 풀이가 아닌 임의 점수. 자세한 흐름은 `playground/chat-memory/chat-continuity.md` 참고.
 - **별도 보존된 어휘 강연:** 14강 ‘여백’까지 완료, 다음은 15강 ‘맥락’. 강연을 요청하면 chat-continuity.md의 10/7~8 관련 부분과 견문록 9~13쪽을 참고한다.
 - 사용자 취향: 이미 아는 단어도 다른 시각에서 뜯어보는 과정을 즐김. 뜻·차이·맥락과 등장인물의 반응을 함께 탐구한다.
 
