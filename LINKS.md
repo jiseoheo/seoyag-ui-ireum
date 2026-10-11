@@ -46,6 +46,17 @@
 - https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/sequel/ideas.md
 - https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/playground/ideas.md
 - https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/service/README.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/service/noel-notebook.html
+
+## 채팅 전용 기억 (playground/chat-memory)
+
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/playground/chat-memory/README.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/playground/chat-memory/chat-continuity.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/playground/chat-memory/tomodachi-life.md
+
+## 프로젝트 설정 안내문
+
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/instructions/project-instructions.md
 
 ## 원고 (장별)
 
