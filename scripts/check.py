@@ -7,6 +7,7 @@
   - .md 문서 안의 상대 경로 링크와 `경로` 표기가 실제 파일을 가리키는지
   - START·STATUS·process 카드·프로젝트 안내문이 열라고 하는 파일이 LINKS.md에 모두 있는지
     (claude.ai는 LINKS.md에 적힌 주소만 열 수 있다)
+  - 프로젝트 안내문의 Claude용·ChatGPT용 블록이 공통 부분과 버전에서 서로, 그리고 START.md와 맞는지
 """
 import glob
 import json
@@ -97,11 +98,26 @@ def check_links_md():
                 problems.append("%s: `%s`이 LINKS.md에 없음(scripts/links.py GROUPS에 추가할 것)" % (src, t))
 
 
+def check_instructions():
+    with open(os.path.join(ROOT, "instructions/project-instructions.md"), encoding="utf-8") as f:
+        blocks = re.findall(r"```\n(.*?)```", f.read(), re.S)
+    commons = [re.split(r"^## (?:Claude|ChatGPT) 전용", b, flags=re.M)[0] for b in blocks]
+    if len(blocks) != 2 or commons[0] != commons[1]:
+        problems.append("instructions/project-instructions.md: Claude용·ChatGPT용 블록의 공통 부분이 다름")
+        return
+    version = re.search(r"안내문 버전: (\S+)", commons[0])
+    with open(os.path.join(ROOT, "START.md"), encoding="utf-8") as f:
+        start = f.read()
+    if not version or "현재 안내문 버전은 **%s**" % version.group(1) not in start:
+        problems.append("START.md: 현재 안내문 버전이 instructions/project-instructions.md와 다름")
+
+
 check_manuscript()
 check_images()
 check_manifest()
 check_links()
 check_links_md()
+check_instructions()
 if problems:
     print("\n".join(problems))
     sys.exit(1)
