@@ -60,6 +60,7 @@
 |---|---|
 | 저장·체크포인트, 끝인사, 모델 교대, Claude Code 전달문 | [process/checkpoint.md](process/checkpoint.md) |
 | 설정 조회, 전체 흐름 개정, 연속성·복선 확인, 서비스 페이지, 변경이력, 문서 역할 | [process/other.md](process/other.md) |
+| Claude Code에서 Codex 보조 검토를 요청하는 경우 | [process/codex-collaboration.md](process/codex-collaboration.md) |
 
 ## 5. CANON / PLAYGROUND / WORK
 - CANON: 원고와 확정된 지속 설정
