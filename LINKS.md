@@ -14,6 +14,7 @@
 - https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/process/appreciation.md
 - https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/process/chat.md
 - https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/process/checkpoint.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/process/codex-collaboration.md
 - https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/process/other.md
 - https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/process/revision.md
 - https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/process/sequel.md
