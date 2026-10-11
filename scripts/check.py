@@ -81,7 +81,7 @@ NOT_FOR_WEB = re.compile(r"^(manuscript/current\.html|manuscript/chapters/_|manu
 
 def check_links_md():
     with open(os.path.join(ROOT, "LINKS.md"), encoding="utf-8") as f:
-        listed = set(re.findall(r"/main/(\S+)", f.read()))
+        listed = set(re.findall(r"githubusercontent\.com/[^/]+/[^/]+/[0-9a-f]{40}/(\S+)", f.read()))
     sources = ["START.md", "STATUS.md", "instructions/project-instructions.md"]
     sources += sorted(glob.glob("process/*.md", root_dir=ROOT))
     for src in sources:

@@ -3,13 +3,19 @@
 
 claude.ai처럼 "대화에 나온 주소만 열 수 있는" 환경을 위한 목록이다.
 main에 저장될 때마다 자동으로 다시 만들어진다.
+
+주소는 main이 아니라 저장한 커밋에 고정한다. claude.ai의 읽기 도구는 한 번 연 주소의
+옛 내용을 오래 보여 주므로, 저장할 때마다 주소 자체가 새로 바뀌어야 최신 내용을 읽는다.
 """
 import glob
 import json
 import os
+import subprocess
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE = "https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/"
+SHA = os.environ.get("GITHUB_SHA") or subprocess.run(
+    ["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True, check=True).stdout.strip()
+BASE = "https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/%s/" % SHA
 
 GROUPS = [
     ("시작·상태", ["START.md", "STATUS.md", "manifest.json"]),
@@ -32,6 +38,7 @@ def main():
         "",
         "> 작업용 파일의 전체 주소. GitHub를 웹으로 읽는 AI는 아래 주소를 그대로 연다.",
         "> 자동 생성 파일(`scripts/links.py`). 직접 고치지 않는다.",
+        "> 주소는 이 커밋에 고정돼 있어 저장할 때마다 새로 바뀐다. 기준 커밋: `%s`" % SHA,
         "",
     ]
     for title, paths in GROUPS:
