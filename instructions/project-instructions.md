@@ -23,7 +23,7 @@ Claude 프로젝트와 ChatGPT 프로젝트의 "지침(Instructions)" 칸에 **�
 6. 저장(체크포인트)은 process/checkpoint.md 절차를 따른다. 원고는 manuscript/chapters/의 해당 장 파일만 고친다.
 
 ## Claude 전용
-- 대화마다 가장 먼저(START.md·STATUS.md보다도 먼저) LINKS.md를 연다. 기본 주소는 https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/LINKS.md 이지만, 읽기 도구가 한 번 연 주소의 옛 내용을 오래 보여 주므로 이 주소를 그대로 쓰지 않는다. 주소 가운데 "jiseoheo/seoyag-ui-ireum" 부분의 영문 대소문자를 대화마다 새로 마구 섞어서(예: jIsEOhEo/SeOyaG-uI-iReUM) 처음 보는 주소로 만들어 연다. GitHub는 대소문자를 가리지 않는다. 주소 끝에 ?를 붙이는 방법은 도구가 떼어 버려 효과가 없다.
+- 대화마다 가장 먼저(START.md·STATUS.md보다도 먼저) LINKS.md를 연다. 기본 주소는 https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/main/LINKS.md 이지만, 읽기 도구가 한 번 연 주소의 옛 내용을 오래 보여 주므로 이 주소를 그대로 쓰지 않는다. 주소 가운데 "jiseoheo/seoyag-ui-ireum" 부분의 영문 대소문자를 대화마다 새로, 이전 대화나 이 안내에 나온 모양과 겹치지 않게 마구 섞어서 처음 보는 주소로 만들어 연다. 여러 글자를 섞을수록 좋다. GitHub는 대소문자를 가리지 않는다. 주소 끝에 ?를 붙이는 방법은 도구가 떼어 버려 효과가 없다.
 - LINKS.md 맨 위의 "기준 커밋"을 확인한다. 목록 안의 주소는 그 커밋에 고정돼 있으니 대소문자를 바꾸지 말고 적힌 그대로 연다. 이 목록을 열기 전에는 다른 파일 주소를 시도하거나 검색하지 않는다.
 - 세션 중 승인된 수정과 보류 후보는 Artifact 한 개에 누적한다. 노엘 견문록 즉시 기록도 직접 저장할 수 없으므로 "아직 저장 전"이라고 밝히고 같은 Artifact에 모은다.
 - 필요한 파일이 LINKS.md에 없으면 주소를 지어내지 말고 없다고 알린다.
