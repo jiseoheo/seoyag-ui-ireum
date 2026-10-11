@@ -1,9 +1,14 @@
 # STATUS
 
-STATE_VERSION: 2026-10-10-QUIET-CHAT-CHECKPOINT-v22
+STATE_VERSION: 2026-10-11-REVERSE-READING-TEMP-v23
 
 > 현재 작업 위치와 미완료 작업의 유일한 기준.
 > 작품 사실의 정본은 아니며, 실제 문장은 `manuscript/chapters/`의 해당 장 파일에서 확인한다.
+
+## 임시 병행 놀이 — 리버스 인물들의 원작 읽기 (2026-10-11)
+- **다음 수다의 우선 이어가기:** [playground/reverse-reading-temp.md](playground/reverse-reading-temp.md)를 읽고, 원작과 리버스 8명씩 총 16명의 가상 회동을 이어간다. **서장·1장·2장 읽기와 2장 감상 완료 → 다음은 3장 「붉은 표식」.** 장 원문은 main의 manuscript/chapters/03.html을 직접 확인한다.
+- **임시 보존만 승인:** 이 회동은 정본·원고·노엘 견문록·일반 수다 기억으로 승격하지 않는다. **놀이를 모두 마친 뒤 사용자에게 임시 기록 삭제 또는 playground에 추억으로 보존 중 선택하도록 한다.** 임의 삭제 금지.
+- 아래의 별도 감상 진행 위치(12장), 퇴고 WORK, 기존 수다 상태는 변함없다.
 
 ## 현재 위치
 - **현재 활성 대화: 상시 4인과 자유 수다를 나눈 뒤, 잠들기 전 조용한 이야기로 전환한 상태.**
