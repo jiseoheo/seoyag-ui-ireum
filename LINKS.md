@@ -2,87 +2,87 @@
 
 > 작업용 파일의 전체 주소. GitHub를 웹으로 읽는 AI는 아래 주소를 그대로 연다.
 > 자동 생성 파일(`scripts/links.py`). 직접 고치지 않는다.
-> 주소는 이 커밋에 고정돼 있어 저장할 때마다 새로 바뀐다. 기준 커밋: `2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289`
+> 주소는 이 커밋에 고정돼 있어 저장할 때마다 새로 바뀐다. 기준 커밋: `ea3b2d9cee982412275fbc0699327821955042ca`
 
 ## 시작·상태
 
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/START.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/STATUS.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manifest.json
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/START.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/STATUS.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manifest.json
 
 ## 프로세스 카드
 
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/process/appreciation.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/process/chat.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/process/checkpoint.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/process/codex-collaboration.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/process/other.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/process/revision.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/process/sequel.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/process/appreciation.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/process/chat.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/process/checkpoint.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/process/codex-collaboration.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/process/other.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/process/revision.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/process/sequel.md
 
 ## 문체·장별 지도
 
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/meta/style.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/meta/chapters.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/meta/style.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/meta/chapters.md
 
 ## 설정 (canon)
 
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/canon/characters-extra.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/canon/characters.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/canon/reader-reviews.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/canon/world.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/canon/characters-extra.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/canon/characters.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/canon/reader-reviews.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/canon/world.md
 
 ## 장별 수정사항 (reviews)
 
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/reviews/ch14.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/reviews/ch16.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/reviews/ch18-20.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/reviews/ch21.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/reviews/ch22.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/reviews/epilogue-1.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/reviews/epilogue-2.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/reviews/ch14.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/reviews/ch16.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/reviews/ch18-20.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/reviews/ch21.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/reviews/ch22.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/reviews/epilogue-1.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/reviews/epilogue-2.md
 
 ## 2편 노트·아이디어·서비스
 
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/sequel/ideas.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/playground/ideas.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/service/README.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/service/noel-notebook.html
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/sequel/ideas.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/playground/ideas.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/service/README.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/service/noel-notebook.html
 
 ## 채팅 전용 기억 (playground/chat-memory)
 
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/playground/chat-memory/README.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/playground/chat-memory/chat-continuity.md
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/playground/chat-memory/tomodachi-life.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/playground/chat-memory/README.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/playground/chat-memory/chat-continuity.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/playground/chat-memory/tomodachi-life.md
 
 ## 프로젝트 설정 안내문
 
-- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/instructions/project-instructions.md
+- https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/instructions/project-instructions.md
 
 ## 원고 (장별)
 
-- 서장 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/00-prologue.html
-- 1. 서약의 이름으로 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/01.html
-- 2. 정직한 초상화 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/02.html
-- 3. 붉은 표식 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/03.html
-- 4. 초승달의 안쪽 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/04.html
-- 5. 검은 나비가 날던 밤 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/05.html
-- 6. 열 걸음의 거리 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/06.html
-- 7. 희푸른 어둠 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/07.html
-- 8. 눈보라 너머의 깃발 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/08.html
-- 9. 서랍 가장 아래 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/09.html
-- 10. 미끼와 바늘 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/10.html
-- 11. 백합 삼백 송이 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/11.html
-- 12. 놓을 것이오 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/12.html
-- 13. 머리카락 한 올의 거리 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/13.html
-- 14. 남쪽에서 온 반지 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/14.html
-- 15. 꿀빛 오후의 응접실 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/15.html
-- 16. 같은 장에 멈춘 보고서 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/16.html
-- 17. 비 오는 서명일 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/17.html
-- 18. 셈이 맞지 않는 장부 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/18.html
-- 19. 돌아와서 하겠다는 말 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/19.html
-- 20. 뜯기지 않은 봉인 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/20.html
-- 21. 마지막 기도문 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/21.html
-- 22. 소금기 어린 바람 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/22.html
-- 에필로그 1 — 아르벨리아의 겨울 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/epilogue-1.html
-- 에필로그 2 — 레몬나무 마을 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/2ccc3d2d9aa31b1c5fe833624ed631e6f4b43289/manuscript/chapters/epilogue-2.html
+- 서장 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/00-prologue.html
+- 1. 서약의 이름으로 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/01.html
+- 2. 정직한 초상화 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/02.html
+- 3. 붉은 표식 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/03.html
+- 4. 초승달의 안쪽 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/04.html
+- 5. 검은 나비가 날던 밤 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/05.html
+- 6. 열 걸음의 거리 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/06.html
+- 7. 희푸른 어둠 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/07.html
+- 8. 눈보라 너머의 깃발 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/08.html
+- 9. 서랍 가장 아래 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/09.html
+- 10. 미끼와 바늘 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/10.html
+- 11. 백합 삼백 송이 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/11.html
+- 12. 놓을 것이오 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/12.html
+- 13. 머리카락 한 올의 거리 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/13.html
+- 14. 남쪽에서 온 반지 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/14.html
+- 15. 꿀빛 오후의 응접실 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/15.html
+- 16. 같은 장에 멈춘 보고서 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/16.html
+- 17. 비 오는 서명일 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/17.html
+- 18. 셈이 맞지 않는 장부 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/18.html
+- 19. 돌아와서 하겠다는 말 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/19.html
+- 20. 뜯기지 않은 봉인 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/20.html
+- 21. 마지막 기도문 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/21.html
+- 22. 소금기 어린 바람 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/22.html
+- 에필로그 1 — 아르벨리아의 겨울 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/epilogue-1.html
+- 에필로그 2 — 레몬나무 마을 — https://raw.githubusercontent.com/jiseoheo/seoyag-ui-ireum/ea3b2d9cee982412275fbc0699327821955042ca/manuscript/chapters/epilogue-2.html
