@@ -23,8 +23,8 @@ GROUPS = [
     ("문체·장별 지도", ["meta/style.md", "meta/chapters.md"]),
     ("설정 (canon)", sorted(glob.glob("canon/*.md", root_dir=ROOT))),
     ("장별 수정사항 (reviews)", sorted(glob.glob("reviews/*.md", root_dir=ROOT))),
-    ("2편 노트·아이디어·서비스", ["sequel/ideas.md", "playground/ideas.md", "service/README.md",
-                              "service/noel-notebook.html"]),
+    ("2편 노트·아이디어·서비스", ["sequel/ideas.md", "playground/ideas.md", "playground/reverse-reading-temp.md",
+                              "service/README.md", "service/noel-notebook.html"]),
     ("채팅 전용 기억 (playground/chat-memory)", sorted(glob.glob("playground/chat-memory/*.md", root_dir=ROOT))),
     ("프로젝트 설정 안내문", ["instructions/project-instructions.md"]),
 ]
